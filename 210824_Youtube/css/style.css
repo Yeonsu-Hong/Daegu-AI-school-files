@@ -39,7 +39,6 @@ input {
 }
 input:focus {
 	outline: none;
-	border: none;
 }
 
 #wrapper {
@@ -49,6 +48,37 @@ input:focus {
 	height: 100%;
 	min-width: 1320px;
 }
+
+
+.flex-align-between {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+
+}
+
+.flex-align-start {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.flex-align-end {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+}
+
+
 
  /* 상단 메뉴 */
 #youtube-top-nav {
@@ -61,7 +91,7 @@ input:focus {
 
 
 #youtube-left-nav {
-	/*선택적으로 스크롤을 나타내고자 할때*/
+	/*선택적으로 스크롤을 나타내고자 할때 scroll하고 다름*/
 	overflow-y: auto;
 	overflow-x: hidden;
 
@@ -70,6 +100,8 @@ input:focus {
 	width: 240px;
 	background-color: #212121;
 
+
+	/* 늘리는 작업 */
 	top: 56px;
 	left: 0;
 
@@ -87,46 +119,6 @@ input:focus {
 }
 
 
-
-
-#youtube-main {
-	position: absolute;
-	left: 240px;
-	top: 56px;
-	right: 0;
-	bottom: 0;
-
-	background-color: grey;
-}
-
-.flex-align-between {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-
-}
-
-.flex-align-start {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-}
-
-.flex-align-end {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: center;
-	align-content: stretch;
-}
-
 /* 상단 메뉴 */
 #youtube-top-nav {
 	position: fixed;
@@ -137,15 +129,16 @@ input:focus {
 
 	padding: 0 16px;
 }
+/* 상단 왼쪽 */
 
 #youtube-top-nav .nav-left {
 	height: 56px;
-	top: -20px;
+	/*top: -20px;*/
 
 }
 
 #youtube-top-nav .nav-left .btn-menu{
-	margin-top: 7px;
+	/*margin-top: 7px;*/
 	width: 24px;
 	height: 24px;
 	background-color: yellow;
@@ -154,6 +147,7 @@ input:focus {
 
 #youtube-top-nav .nav-left h1 {
 	margin-left: 16px;
+	margin-bottom: 5px;
 	
 }
 
@@ -167,6 +161,8 @@ input:focus {
 	height: 20px;
 	
 }
+
+/* 상단 오른쪽 */
 
 #youtube-top-nav .nav-right {
 	height: 56px;
@@ -194,6 +190,9 @@ input:focus {
 
 	color: #3ea6ff;
 }
+
+
+/*상단 center*/
 
 #youtube-top-nav .nav-center {
 	position: absolute;
@@ -225,6 +224,7 @@ input:focus {
 #youtube-top-nav .nav-center .search-wrap .btn-search {
 	width: 65px;
 	height: 30px;
+
 	border: solid 1px grey;
 	background-color: grey;
 }
@@ -236,11 +236,24 @@ input:focus {
 	background-color: blue;
 
 
-	margin-left: 14px;
+	margin-left: 16px;
 
 }
 
 
 
+
+/* 유튜브 메인 */
+
+
+#youtube-main {
+	position: absolute;
+	left: 240px;
+	top: 56px;
+	right: 0;
+	bottom: 0;
+
+	background-color: grey;
+}
 
 

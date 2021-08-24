@@ -1,0 +1,608 @@
+@media (max-width: 767px) {
+	
+
+	#intro {
+		height: 1150px;
+		background-image: url(../image/mobile/intro/mobile_intro_bg.png);
+	}
+
+	#intro .introWrap {
+		width: 189px;
+		height: 129px;
+
+		margin-left: -94.5px;
+		/*background-color: yellow;*/
+
+		top: 230px;
+	}
+
+	#intro .introWrap .logo {
+		width: 189px;
+		height: 129px;
+		background-image: url(../image/mobile/intro/mobile_logo.png);
+	}
+
+	#intro .introWrap .lion,
+	#intro .introWrap .rabbit,
+	#intro .introWrap .bear,
+	#intro .introWrap .monkey,
+	#intro .cloudWrap .dragonfly {
+		display: none;
+	}
+
+	#intro .cloudWrap {
+		height: 350px;
+
+		top: 280px;
+	}
+
+	#intro .cloudWrap .leftCloud {
+		width: 267px;
+		height: 314px;
+		background-image: url(../image/mobile/intro/mobile_cloud1.png);
+	}
+
+	#intro .cloudWrap .rightCloud {
+		width: 237px;
+		height: 309px;
+		background-image: url(../image/mobile/intro/mobile_cloud2.png);		
+	}
+
+
+
+	/* Farm1 */
+	#farm1 {
+		height: 450px;
+		background-image: url(../image/mobile/farm/farm1/mobile_farm1_bg.png);
+	}
+
+	#farm1 .leftRice1 {
+		width: 86px;
+		height: 150px;
+		background-image: url(../image/mobile/farm/farm1/mobile_leftrice.png);
+	}
+
+	#farm1 .rightRice1 {
+		width: 95px;
+		height: 170px;
+		background-image: url(../image/mobile/farm/farm1/mobile_rightrice.png);
+
+		top: -20px;
+	}
+
+	#farm1 .farmer {
+		width: 160px;
+		height: 250px;
+		background-image: url(../image/mobile/farm/farm1/mobile_farmer.png);
+
+		margin-left: -69px;
+	}
+
+	#farm1 .farmSpeechWrap {
+		width: 300px;
+
+		text-align: center;
+
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	#farm1 .farmSpeechWrap img {
+		width: 79px;
+	}
+
+	#farm1 .farmSpeechWrap .farmSpeech {
+		line-height: 20px;
+		font-size: 12px;
+	}
+
+
+
+	#farm2 {
+		height: 440px;
+		background-image: url(../image/mobile/farm/farm2/mobile_farm2_bg.png);
+	}
+
+	#farm2 .leftRice2 {
+		width: 57px;
+		height: 201px;
+		background-image: url(../image/mobile/farm/farm2/mobile_leftrice2.png);
+	}
+
+
+	#farm2 .rightRice2 {
+		width: 54px;
+		height: 202px;
+		background-image: url(../image/mobile/farm/farm2/mobile_rightrice2.png);
+	}
+
+	#farm2 .scarecrow {
+		display: none;
+	}
+
+
+
+
+	#farm3 {
+		height: 500px;
+		background-image: url(../image/mobile/farm/farm3/mobile_farm3_bg.png);
+	}
+
+	#farm3 .farm3Window {
+		width: 82px;
+		height: 56px;
+		background-image: url(../image/mobile/farm/farm3/mobile_window.png);
+
+		margin: 10px 0 0 10px;
+	}
+
+	#farm3 .machineWrap {
+		width: 200px;
+		height: 150px;
+
+		top: 120px;
+		margin-left: -96px;
+	}
+
+	#farm3 .machineWrap .machine1 {
+		width: 191px;
+		height: 149px;
+		background-image: url(../image/mobile/farm/farm3/mobile_machine1.png);
+	}
+	
+	#farm3 .machineWrap .sawShadow,
+	#farm3 .machineWrap .timer,
+	#farm3 .machineWrap .machineBird {
+		display: none;
+	}
+
+	#farm3 .machineWrap .saw1, 
+	#farm3 .machineWrap .saw2 {
+		width: 31px;
+		height: 31px;
+		background-image: url(../image/mobile/farm/farm3/mobile_saw.png);
+	}
+
+	#farm3 .machineWrap .saw1 {
+		margin: 50px 0 0 50px;
+	}
+
+	#farm3 .machineWrap .saw2 {
+		margin: 50px 0 0 115px
+	}
+
+	#farm3 .farm3Bubble {
+		position: absolute;
+
+		width: 152px;
+
+		left: 50%;
+		margin: 0 0 0 -70px;
+	}
+
+	/*2021년 7월 14일 시작*/
+
+	#forest1 {
+		position: relative;
+
+		height: 400px;
+		background-image: url(../image/mobile/forest/forest1/mobile_forest1_bg.png);
+	}
+
+	#forest1 .leftTree {
+		width: 79px;
+		height: 187px;
+		background-image: url(../image/mobile/forest/forest1/mobile_lefttree.png);
+	}
+
+	#forest1 .treeWrap {
+		width: 68px;
+		height: 129px;
+
+		top: 200px;
+	}
+
+	#forest1 .treeWrap .rabbit1,
+	#forest1 .treeWrap .rabbit2 {
+		display: none;
+	}
+
+	#forest1 .treeWrap .rightTree {
+		width: 68px;
+		height: 129px;
+		background-image: url(../image/mobile/forest/forest1/mobile_righttree.png);
+	}
+
+
+
+	#forest2 {
+		position: relative;
+
+		height: 400px;
+		background-image: url(../image/mobile/forest/forest2/mobile_forest2_bg.png);
+	}
+
+	#forest2 .frog {
+		width: 34px;
+		height: 57px;
+		background-image: url(../image/mobile/forest/forest2/mobile_frog.png);
+
+		margin: 0 0 0 20px;
+	}
+
+	#forest2 .machineWrap2 {
+		width: 200px;
+		height: 110px;
+
+		top: 70px;
+		margin-left: -97px;
+	}
+
+	#forest2 .machineWrap2 .machineBottom {
+		width: 141px;
+		height: 60px;
+		background-image: url(../image/mobile/forest/forest2/mobile_machinebottom.png);
+
+		left: 50%;
+		margin: 50px 0 0 -70.5px;
+	}
+
+	#forest2 .machineWrap2 .machineLeft {
+		width: 46px;
+		height: 85px;
+		background-image: url(../image/mobile/forest/forest2/mobile_machineleft.png);
+
+		margin: 0 0 0 20px;
+	}
+
+	#forest2 .machineWrap2 .machineRight {
+		width: 46px;
+		height: 93px;
+		background-image: url(../image/mobile/forest/forest2/mobile_machineright.png);
+
+		margin: -10px 0 0 130px;
+	}
+
+	#forest2 .forestBubble {
+		position: absolute;
+
+		width: 161px;
+
+		top: 290px;
+		left: 50%;
+		margin-left: -83px;
+	}
+
+
+	#forest2 .forest2Tree {
+		float: right;
+
+		width: 69px;
+		height: 76px;
+		background-image: url(../image/mobile/forest/forest2/mobile_forest2tree.png);
+
+		top: 130px;
+		margin-right: 20px;
+	}
+
+
+
+
+	#forest3 {
+		height: 630px;
+		background-image: url(../image/mobile/forest/forest3/mobile_forest3_bg.png);
+	}
+
+	#forest3 .forest3Wrap {
+		width: 99px;
+		height: 127px;
+
+		top: 300px;
+	}
+
+	#forest3 .forest3Wrap .forest3Tree {
+		width: 99px;
+		height: 127px;
+		background-image: url(../image/mobile/forest/forest3/mobile_forest3tree.png);
+	}
+
+	#forest3 .forest3Wrap .smallBird, 
+	#forest3 .forest3Wrap .bigBird {
+		display: none;
+	}
+
+
+
+
+
+	#science {
+		height: 580px;
+		background-image: url(../image/mobile/science/mobile_science_bg.png);
+	}
+
+	#science .scienceWrap {
+		overflow: hidden;
+		width: 360px;
+		height: auto;
+
+		top: 180px;
+	}
+
+	#science .scienceWrap .scienceLeftWrap {
+		width: 100px;
+	}
+
+	#science .scienceWrap .scienceLeftWrap .gly {
+		width: 76px;
+		height: 63px;
+		background-image: url(../image/mobile/science/mobile_gly.png);
+
+		margin: 0 0 10px 0;
+	}
+
+	#science .scienceWrap .scienceLeftWrap img,
+	#science .scienceWrap .scienceRightWrap img {
+		height: 15px;
+	}
+
+	#science .scienceWrap .scienceLeftWrap p,
+	#science .scienceWrap .scienceRightWrap p {
+		display: none;
+	}
+
+
+	#science .scienceWrap .scienceCenterWrap {
+		width: 160px;
+		height: 222px;
+	}
+
+	#science .scienceWrap .scienceCenterWrap .purpleSteam {
+		width: 80px;
+		height: 71px;
+		background-image: url(../image/mobile/science/mobile_grape.png);
+
+		margin-left: -40px;
+	}
+
+	#science .scienceWrap .scienceCenterWrap .funnelBack {
+		width: 173px;
+		height: 151px;
+		background-image: url(../image/mobile/science/mobile_hopperback.png);
+	}
+
+	#science .scienceWrap .scienceCenterWrap .funnelFront {
+		width: 160px;
+		height: 122px;
+		background-image: url(../image/mobile/science/mobile_hopperfront.png);
+
+		left: 50%;
+		margin: 20px 0 0 -80px;
+	}
+
+
+
+	#science .scienceWrap .scienceRightWrap {
+		width: 100px;
+	}
+
+	#science .scienceWrap .scienceRightWrap .water {
+		width: 67px;
+		height: 63px;
+		background-image: url(../image/mobile/science/mobile_water.png);
+
+		margin-bottom: 10px;
+		margin-left: 32px;
+	}
+
+
+
+
+
+
+	#night1 {
+		position: relative;
+		height: 500px;
+		background-image: url(../image/mobile/oneday/night1/mobile_night1_bg.png);
+	}
+
+	#night1 .owl {
+		width: 88px;
+		height: 151px;
+		background-image: url(../image/mobile/oneday/night1/mobile_owl.png);
+
+		margin-top: 0;
+	}
+
+	#night1 .starWrap {
+		position: absolute;
+
+		width: 308px;
+		height: 157px;
+		background-image: url(../image/mobile/oneday/night1/mobile_star.png);
+
+		top: 300px;
+		margin-left: 50px;
+	}
+
+
+	#night1 .starWrap .star1,
+	#night1 .starWrap .star2,
+	#night1 .starWrap .star3 {
+		display: none;
+	}
+
+
+
+
+	#night2 {
+		height: 620px;
+		background-image: url(../image/mobile/oneday/night2/mobile_night2_bg.png);
+	}
+
+
+	#night2 .moon {
+		width: 40px;
+		height: 40px;
+
+		background-image: url(../image/mobile/oneday/night2/mobile_moon.png);
+	}
+
+
+	#night2 .night2Bubble {
+		width: 127px;
+
+		left: 50%;
+		margin: 300px 0 0 -67px;
+	}
+
+
+
+	#night2 .rightMoonTree {
+		width: 70px;
+		height: 173px;
+		background-image: url(../image/mobile/oneday/night2/mobile_moontree.png);
+
+		top: 70px;
+		bottom: initial;
+	}
+
+
+	#morning {
+		height: 720px;
+		background-image: url(../image/mobile/oneday/morning/mobile_morning_bg.png);
+	}
+
+
+	#morning .sun {
+		width: 33px;
+		height: 32px;
+		background-image: url(../image/mobile/oneday/morning/mobile_sun.png);
+	}
+
+	#morning .leftPine {
+		width: 48px;
+		height: 81px;
+		background-image: url(../image/mobile/oneday/morning/mobile_leftpine.png);
+	}
+
+	#morning .rightPine {
+		width: 77px;
+		height: 149px;
+		background-image: url(../image/mobile/oneday/morning/mobile_rightpine.png);
+
+		top: 220px;
+	}
+
+
+
+	#kitchen {
+		height: 400px;
+		background-image: url(../image/mobile/kitchen/mobile_kitchen_bg.png);
+	}
+
+	#kitchen .leftPan {
+		width: 52px;
+		height: 78px;
+		background-image: url(../image/mobile/kitchen/mobile_pan.png);
+	}
+
+	#kitchen .rightPot {
+		width: 73px;
+		height: 38px;
+		background-image: url(../image/mobile/kitchen/mobile_pot.png);
+	}
+
+	#kitchen .steamWrap {
+		width: 300px;
+		height: 300px;
+		margin-left: -150px;
+		/*background-color: yellow;*/
+
+		top: 0;
+	}
+
+	#kitchen .steamWrap .steam {
+		width: 222px;
+		height: 184px;
+		background-image: url(../image/mobile/kitchen/mobile_steam.png);
+
+		left: 50%;
+		top: 100px;
+		margin: 0 0 0 -140px;
+	}
+
+	#kitchen .steamWrap .bubble1 {
+		display: none;
+	}
+
+
+	#kitchen .kitchenBubble {
+		width: 143px;
+		left: 50%;
+
+		margin: -320px 0 0 -70px;
+	}
+
+	
+#color1 {
+		height: 500px;
+		background-image: url(../image/mobile/color/color1/mobile_color1_bg.png);
+	}
+
+	#color1 .penguin {
+		display: none;
+	}
+
+	#color1 .color1Bubble {
+		position: relative;
+		float: initial;
+
+		width: 166px;
+		height: 56px;
+
+		left: 50%;			
+		margin: 100px 0 0 -83px;
+	}
+
+	#color3 {
+		height: 430px;
+		background-image: url(../image/mobile/color/color3/mobile_color3_bg.png);
+	}
+
+	#color3 .flag {
+		width: 320px;
+		height: 46px;
+		background-image: url(../image/mobile/color/color3/mobile_flag.png);
+
+		margin-left: -160px;
+	}
+
+
+
+	#color3 .book {
+		width: 107px;
+		height: 46px;
+		background-image: url(../image/mobile/color/color3/mobile_book.png);
+
+		margin-right: 20px;
+	}
+
+	#color3 .logo {
+		width: 225px;
+
+		margin-top: 100px;
+		margin-left: -112.5px;
+	}
+
+	#color3 .dice {
+		width: 62px;
+		height: 52px;
+		background-image: url(../image/mobile/color/color3/mobile_dice.png);
+	}
+
+
+
+}
+
+
+

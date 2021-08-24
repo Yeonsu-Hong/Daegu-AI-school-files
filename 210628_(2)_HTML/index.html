@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2회차 HTML 강의</title>
+
+		css 정보 
+		<style>
+		
+		tr, td, th {
+			border :  solid 1px #000000;
+		}
+
+			span {
+					width:  300px;
+					height:  300px;
+					background-color:  Yellow;
+					margin-top:  100px;
+					margin-bottom: 100px;
+
+			}
+
+			h1{
+
+					width:  300px;
+					height:  300px;
+					background-color:  Yellow;
+
+					margin-top:  100px;
+					margin-bottom:  100px;
+
+					padding-top:  100px;
+					padding-bottom:  100px;
+
+
+			}
+
+		</style>
+</head>
+<body>
+	<!--
+	<form method="post">
+
+	<label for="name" > 이름 </label>
+	<input type="text"placeholder="이름을 입력하세요." id="name" required  	minlength="2" maxlength="8">
+
+	<label for="mail">이메일</label>
+	<input type="email" placeholder="이메일을 입력하세요." id="mail" required>
+
+	<label for="pw">비밀번호</label>
+	<input type="password" placeholder="최소 6글자, 최대 12글자 입력" id="pw" required
+	minlength="10" maxlength="15">
+
+	<label for="num">숫자</label>
+	<input type="number" id="num" placeholder="숫자만 입력" min="10" max="40" step="5">
+
+	<label for="upload">파일 업로드</label>
+	<input type="file" id="upload" accept="image/png, image/jpg, image/gif">
+
+
+	<button type="submit">제출</button>
+
+	</form>
+	-->
+
+	<!--
+		<label for="n1">한국</label>
+	<input type="checkbox" id="n1" name="country" value="한국">
+		<label for="n2">일본</label>
+	<input type="checkbox" id="n2" name="country" value="일본">
+		<label for="n3">쭝궈</label>
+	<input type="checkbox" id="n3" name="country" value="쭝궈">
+	-->
+	name은 좌표의 역할을 한다. value는 서버에 데이터를 전달하는 역할
+	<!--  country : 한국 -->
+	<!--  country : 일본 -->
+	<!--  country : 한국 -->
+		-->
+		<!-- 라디오 타입 : 단일 체크만 된다.
+	<label for="n1">한국</label>
+	<input type="radio" id="n1" name="country" value="한국" >
+		<label for="n2">일본</label>
+	<input type="radio" id="n2" name="country" value="일본"checked>
+		<label for="n3">쭝궈</label>
+	<input type="radio" id="n3" name="country" value="쭝궈">
+
+--> 
+
+	<!-- text area : 장문의 내용을 고객들에게 받고자 할때 넣는것!
+
+		<label for="content">문의내용</label>
+		<textarea id="content" cols="40" rows="8"></textarea>
+								행과 열의 개념!!
+	-->
+
+
+
+	dropdown 을 만드는것! 
+	<!-- select안에는 option값만 존재하여야 한다 -->
+
+	<!--
+	<select name="job">
+		<option selected disabled>직책을 선택해 주세요.</option>
+		<option value ="교수">교수</option>
+		<option value ="포닥">포닥</option>
+		<option value ="대학원생">대학원생</option>
+
+
+	</select>
+	-->
+	<!--
+		<table>
+		<caption>상품 정보</caption>
+		<thead>	
+			<tr>
+				<th>상품</th>
+				<th>색상	</th>
+				<th>가격	</th>
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr>
+								<td>아이패드 프로 27인치</td>
+								<td>블루</td>
+								<td>10,000원</td>
+					</tr>
+					<tr>			표를 병 
+       							<td rowspan="2">아이패드 프로 12인치</td>
+								<td>블랙</td>
+								<td>1,000원</td>
+					</tr>	
+					<tr>		
+								
+								<td>레드</td>
+								<td>1,000원</td>
+					</tr>
+   							</tbody>
+
+
+
+   							<tfoot>
+   								<tr>
+   									<td colspan="2">총 가격</td>
+   									<td>12,000원</td>
+   								</tr>		
+   								
+   							</tfoot>		
+		</table>
+
+
+		-->	
+
+		
+
+	<!--
+
+		<header>
+
+			<h1>
+				<a href="#">
+					<img>
+				</a>
+			</h1>
+					
+			<nav>
+				<ul>
+				<li><a href="#">메뉴1</a></li>
+				<li><a href="#">메뉴2</a></li>
+				<li><a href="#">메뉴3</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		본문에 해당하는 태그  
+		<main role="main">
+			role 꼭 넣어줘야 한다.
+
+		<section>
+			<h2>Service</h2>	
+		</section>
+
+		<section>
+			<h2>Portfolio</h2>
+		</section>
+
+		<article>
+			<h2>Article title</h2>
+			<p>Nice to see you</p>
+		</article>
+
+
+		<aside></aside> 본문 정보와 관계성이 좀 떨어지는 내용
+
+
+		<footer></footer> 가장 하단에 들어가는 부분 
+
+
+		<div></div>
+
+
+		<form> 
+			<label></label> 이런것들이 들어와야된다.
+			<input type="" name="">
+			
+		</form>
+
+		공간을 만드는것!!
+
+		</main>
+
+		  6월 29일 화요일 강의 시작
+			
+			HTML도 2가지 진영으로 나누어져 있다. 어벤저스의 시빌워처럼 --> 
+
+		
+			<!-- Inline / Block 
+			Inline : 상하 배치 작업을 할수 없다.( 공간에 대한 크기가 생성x, 줄바꿈 현상이 일어나지 않는다.)
+			Block : 상하 배치 작업이 가능하다 (줄바꿈 현상이 일어난다.)
+
+			<span>Inline</span>
+			<span>Inline</span>
+			<span>Inline</span>
+
+			<h1>Block</h1>
+			<h1>Block</h1>
+			<h1>Block</h1>
+							
+
+
+
+							
+
+
+
+
+
+
+</body>
+</html>

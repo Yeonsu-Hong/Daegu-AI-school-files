@@ -1,0 +1,412 @@
+/* 태생적으로 html과 body 안에도 margin과 padding이 들어가 있기 때문에 항상 site 제작시에는 초기화를 시켜 주어야 
+한다. */
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+
+}
+
+.box-model {
+	box-sizing: border- box;
+
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border: solid 10px red;
+
+	/*margin: 100px 0 0 100px;*/
+	padding: 100px 0 0 100px;
+	
+	/*
+	margin-left: 100px;
+	
+	css의 분량이 많아질수록 페이지 로딩 속도가 느려진다.
+
+	margin-left: 100px;
+	margin-top: 100px;
+	padding-left: 100px;
+	padding-top: 100px;
+	*/
+}
+
+.margin-one {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+
+	margin-bottom: 100px; # 숫자가 큰 값이 우선순위가 높다.
+}
+
+.margin-two {
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+
+	margin-top: 100px;
+}
+
+
+
+.margin-parent {
+	width: 300px;
+	height:  300px;
+	background-color: yellow;
+}
+.margin-child {
+	position: absolute;
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	margin-top:  100px;
+} 
+
+/*
+h1{
+
+
+	display:  inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+
+	margin-top: 100px;
+}
+
+span {
+
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+
+	margin-top: 100px;
+}
+*/
+
+
+
+.inline-block {
+	display: inline-block;
+
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.inline, .inline-block, img {
+
+vertical-align: middle;
+}
+
+
+
+.static-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.static-child {
+	
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	top: 100px;
+}
+
+
+
+
+
+
+.box1 {
+width: 300px;
+height: 200px;
+background-color: gray;
+}
+
+.fixed-parent {
+	width: 300px;
+	height: 300px;
+	/*background-color: yellow;*/
+}
+
+.fixed-child {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	background-color: blueviolet;
+
+	/*margin-top: 100px;*/
+	/*top: 100px;*/
+	/*left: 100px;*/
+}
+
+.box2 {
+	width: 300px;
+	height: 2000px;
+	background-color: green;
+
+
+}
+
+/* relative
+
+
+.box1 {
+width: 300px;
+height: 200px;
+background-color: gray;
+}
+
+.relative-parent {
+	width: 300px;
+	height: 200px;
+	background-color: yellow;
+}
+
+.relative-child {
+	position: relative;
+
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	background-color: blueviolet;
+
+	margin-top: 100px;
+	top: 100px;
+	
+}
+
+  */
+  
+
+
+.box1 {
+width: 300px;
+height: 200px;
+background-color: gray;
+}
+
+.absolute-parent {
+	position: static;
+	width: 300px;
+	height: 200px;
+	background-color: yellow;
+}
+
+.absolute-child {
+	position: absolute;
+
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	background-color: blueviolet;
+
+	/*margin-top: 100px;*/
+	top: 100px;
+}
+
+
+.z-one {
+	/*position: absolute;*/
+
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+
+	/*z-index: 10;*/
+}
+.z-two {
+	/*position: absolute;*/
+	width: 200px;
+		height: 200px;
+		background-color: blue;
+
+	/*z-index: 20;*/
+}
+
+
+
+
+
+
+.left-1{
+	float: left;
+
+	width: 100px ;
+	height: 150px;
+	background-color: blue;
+}
+
+.right-1{
+	float: right;
+
+	width: 100px;
+	height: 150px;
+	background-color: green;
+}
+
+/*
+header {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+}
+
+.left {
+	float: left;
+
+	width: 300px;
+	height: 200px;
+	background-color: pink;
+}
+
+.center {
+	float: left;
+
+	width: 500px;
+	height: 200px;
+	background-color: blue;
+}
+
+.right {
+	position: absolute;
+	float: right;
+	width: 300px;
+	height:  200px;
+	background-color: green;
+}
+
+footer {
+	clear: both;
+
+	width: 100%;
+	height: 100px;
+	background-color: black;
+}
+
+section	{
+	width: 1400px;
+	height: 200px;
+	background-color: orange;
+}
+*/
+
+/*
+.left-2 {
+	float: left;
+
+	width: 100px;
+	height: 150px;
+	background-color: yellow;
+}
+
+.right-2 {
+	float: right;
+	width: 100px;
+	height: 150px;
+	background-color: blue;
+}
+
+
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+}
+
+.clearfix {
+	clear: both;
+}
+
+section {
+	overflow: hidden;
+	width: 800px;
+	background-color: orange;
+}
+*/
+
+/*
+
+.over-box {
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+}*/
+
+
+
+
+
+.container {
+	display: flex;
+	/*flex-direction: row;*/
+	/*flex-wrap: wrap;*/
+	
+	flex-flow: row wrap;
+	justify-content: space-between;   /*flex-end    space-between space-around */
+	align-items: baseline;
+                     
+	width: 1000px;
+	height: 500px;
+	border: solid 10px red;
+}
+
+.item {
+	width: 200px;
+	height: 200px;
+}
+
+.one {
+	height: 100px;
+	background-color: yellow;
+}
+
+.two {
+	height: 200px;
+	background-color: blue;
+}
+
+.three {
+	/*width: 900px;*/
+	height: 300px;
+	background-color: orange;
+}
+
+
+
+.center-1 {
+	width: 300px;
+	height: 300px;
+	background-color:yellow;
+	margin: 0 auto;
+}
+
+.center-2 {
+		position: relative;
+
+	width: 300px;
+	height: 300px;
+	background-color:blue;
+
+	left: 50%;
+	margin-left: -150px;
+}
+	https://css-tricks.com/centering-in-css/
+
+
+
+
+
+

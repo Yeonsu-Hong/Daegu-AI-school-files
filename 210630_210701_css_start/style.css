@@ -1,0 +1,253 @@
+/*
+h1 {
+	font-size:  80px;
+			
+		}
+
+
+
+header{
+	color: red;
+}
+
+header h1,
+footer h1
+ {color: blue;
+}
+
+header p,
+footer p
+ {
+	color:  green;
+}
+
+footer h1 {
+	color: blue;
+}
+
+footer p {
+	color: green;
+}
+
+
+h1 {
+	color:  red;
+}		
+
+#test1 {
+color: blue;
+}
+
+.test2{
+	color: green;
+}
+
+
+input[type="text"]{
+	border:solid 10px red;
+}
+
+input[type="password"]{
+	border:solid 10px blue;
+}
+}
+
+
+
+
+
+
+.bg-1{
+	background-color: red;
+}
+
+
+.font-size-1 {
+	font-size:  50px;
+}
+
+
+#color-1{
+	color: red;
+}
+
+#font-style-1{
+	font-style: italic;
+}
+
+
+
+
+
+#intro h2{
+	color: red;
+
+}
+
+#intro .container p{
+	color: blue;
+}
+
+
+#color-2{
+	color: pink;
+}
+
+.color-1{
+	color: green;
+}
+
+
+h1{
+	color: red;
+}		
+
+
+h1{
+	color: blue;
+}
+
+
+
+
+
+
+#intro div h1 {
+	color: green;
+}
+
+
+
+#intro h1 {
+	color: blue;
+}
+
+
+
+header h1{
+	color: red;
+}
+	
+
+#intro .container h1{
+	color: pink;
+}
+
+
+
+
+
+/*%하면 가변값으로 바뀌게 된다. 부모의 크기에 영향을 받는다.
+
+
+header {width: 500px;}
+
+
+
+
+div 	{
+	width: 100%;
+	height: 300px;
+	
+% 설정한 width에서 사용한다.
+	최소
+	min-width: 600px;
+	max-width: 800px;
+	최대
+	border: solid 10px red;
+	border-radius: 50px;
+	테두리에 각진 모서리를 round화 시키고 싶다할때 사용
+	
+	background-color: yellow;
+
+	opacity: 1;
+
+}
+
+
+h1 {
+	color:  gray;
+	=color: rgb(123, 111, 21);
+	=color:  #eaeaea; (hexacode 위랑 결과 동일)
+	font-size:  90px;
+	font-style: initial;(디폴트값)
+	font-family: 'Noto Sans KR', sans-serif;
+	(복수의 폰트 서체를 지정할수 있다. sans-serif는 모든 브라우저에서 지원된다. )
+	font-weight: 100;
+	text-decoration: underline;
+	text-decoration: line-through; 가운데 밑줄 긋는 것이다. 
+	text-decoration: none;
+	text-align: center; (left, right)
+
+	background-color: pink;
+}
+
+ul {
+	list-style:  none;	
+	태생적으로 점이 찍히는 부분을 제거
+}
+	opacity: 0.5 ; 투명도에 영향을 미침
+*/
+
+/*
+#bg {
+	width: 256px;
+	height: 256px;
+	background-color: yellow;
+	background-image: url(icon.png); 이미지의 경로
+	background-repeat: no-repeat;(repeat-x, repeat-y)
+	background-position: top left;(center, right bottom)
+
+}
+*/
+7/1 목 시작
+/*
+a:link {
+	color:  red;
+}
+a:active {
+
+	color: blue;
+}
+a:hover	{
+	color: pink;	
+}
+
+
+input:focus {
+	border: solid 20px red; 
+}
+
+li:first-child {
+	color: red;
+}
+
+li:last-child {
+	color: blue;
+}
+
+li:nth-child(2n) {
+	color: gray;
+}
+
+/* 홀수2n+1,짝수2n도 지정할수 있다. */
+
+/*
+
+
+
+
+
+li:before {
+	content: "***";
+}
+
+li:after {
+	content:  "아이즈원";
+}
+
+정확한 정체는 디자인일 뿐이다. 글자가 아님
+
+
+가상 선택자 부분 끝
+*/

@@ -1,0 +1,263 @@
+/* intro */
+
+#intro .introWrap .lion {
+	animation: spinLion 1500ms linear infinite alternate;
+}
+
+@keyframes spinLion {
+	from {
+		transform: rotate(-10deg);
+	}
+
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+#intro .introWrap .rabbit{
+	animation: spinRabbit 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbit {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(5deg);
+	}
+}
+
+#intro .introWrap .monkey {
+	animation: spinMonkey 800ms linear infinite alternate;
+}
+
+@keyframes spinMonkey {
+	from {
+		transform: rotate(20deg);
+	}
+
+	to {
+		transform: rotate(50deg);
+	}
+}
+
+
+#intro .introWrap .bear {
+	animation: spinLion 1500ms linear infinite alternate;
+}
+
+@keyframes spinBear {
+	from {
+		transform: rotate(-10deg);
+	}
+
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+
+#intro .cloudWrap .dragonfly {
+	animation: flyDragonfly linear 7s infinite;
+}
+
+@keyframes flyDragonfly {
+	from {
+		left: -366px;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+
+#farm3 .machineWrap .timer {
+	animation: rotateTimer 10000ms linear infinite;
+}
+
+@keyframes rotateTimer {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#farm3 .machineWrap .saw1 {
+	animation: rotateLeftSaw 10000ms linear infinite;
+}
+
+@keyframes rotateLeftSaw {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+
+#farm3 .machineWrap .saw2 {
+	animation: rotateRightSaw 10000ms linear infinite;
+}
+
+@keyframes rotateRightSaw {
+	from { transform: rotate(360deg); }
+	to { transform: rotate(0deg); }
+}
+
+
+/*2021년 7월 14일 */
+
+#forest1 .treeWrap .rabbit1 {
+	animation:  sppinRabbitOne 1000ms linear infinite alternate;
+}
+
+@keyframes sppinRabbitOne {
+	from { transform: rotate(0deg);} 
+	to { transform: rotate(10deg); }
+}
+
+#forest1 .treeWrap .rabbit2 {
+	animation: spinRabbitTwo 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbitTwo {
+	from { transform: rotate(10deg);} 
+	to { transform: rotate(0deg); }
+}
+
+
+
+
+#forest2 .machineWrap2 .machineLeft {
+	animation: moveLeft 1s linear infinite alternate;
+}
+
+@keyframes moveLeft {
+	from {left: 30px;}
+	to {left: 0}
+}
+
+
+#forest2 .machineWrap2 .machineRight {
+	animation: moveRight 1s linear infinite alternate;
+}
+
+@keyframes moveRight {
+	from {left: -30px;}
+	to {left: 0}
+}
+
+
+
+
+
+#forest3 .forest3Wrap .smallBird {
+	animation: spinSmallBrid 1000ms linear infinite alternate;
+}
+
+@keyframes spinSmallBrid {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+#forest3 .forest3Wrap .bigBird {
+	animation: spinBigBrid 1000ms linear infinite alternate;
+}
+
+@keyframes spinBigBrid {
+	from {
+		transform: rotate(-10deg);
+	}
+
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+
+#science .scienceWrap .gly {
+	animation: spinGly 1500ms linear infinite alternate;
+}
+
+@keyframes spinGly {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(50deg); }
+}
+
+#science .scienceWrap .water {
+	animation: spinWater 1500ms linear infinite alternate;
+}
+
+@keyframes spinWater {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(-50deg); }
+}
+
+
+
+
+
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3 {
+	animation: pulseStar 1s linear infinite alternate;
+}
+
+@keyframes pulseStar {
+	from {  transform: scale(1); }
+	to { transform: scale(0.8); }
+}
+
+
+#night2 .moon {
+	animation: moveMoon linear 10s infinite;
+}
+
+@keyframes moveMoon {
+	from {
+		margin-left: -135px;
+	}
+	to {
+		margin-left: 110%;
+	}
+}
+
+#morning .sun {
+	animation: moveSun linear 10s 1500ms infinite;
+}
+
+@keyframes moveSun {
+	from {
+		margin-left: -131px;
+	}
+	to {
+		margin-left: 110%;
+	}
+}
+
+#kitchen .steamWrap .bubble1 {
+  animation-name: bubble;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes bubble {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  100% {transform:translate(-179px, -283px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+
+
+
+
+
+
+
+
+
+
+

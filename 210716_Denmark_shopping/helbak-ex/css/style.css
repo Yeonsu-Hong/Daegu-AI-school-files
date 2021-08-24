@@ -1,0 +1,338 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+/* 아래 코드는 default로 넣어주는게 좋다. */
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+
+	font-family: sans-serif;
+	color: #585858;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: 400;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+span {
+	display: block;
+}
+
+
+
+#header h1 {
+	background-color: yellow;
+
+}
+
+#header h1 .logo {
+	position: relative;
+	display: block;
+
+	width: 100%;
+	height: 65px;
+	/*background-color: yellow;*/
+}
+
+#header .logo img {
+	position: absolute;
+
+	top: 0;
+	margin-top: 23px;
+
+	left: 50%;
+	margin-left: -93px;
+}
+
+/* 덴마크 쇼핑몰은 미디어쿼리 안쪽에다가 pc버전을 넣었다 */
+/*3개의 영역*/
+
+#header .buttons ul {
+	overflow: hidden;
+
+}
+
+
+
+#header .buttons li {
+	position: relative;
+	float: left;
+
+	width: 33.33%;
+	height: 65px;
+	
+}
+
+#header .buttons .menu-button {
+	display: block;
+
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+
+#header .buttons li:nth-child(1) .menu-button {
+	background-color: blue;
+}
+
+
+#header .buttons li:nth-child(2) .menu-button {
+	background-color: pink;
+}
+
+
+#header .buttons li:nth-child(3) .menu-button {
+	background-color: green;
+}
+
+/*이미지 y축 중앙정렬 작업*/
+
+#header .buttons li .menu-button img {
+	position: relative;
+	height: 20px;
+
+	top: 50%;	 
+	transform: translateY(-50%);
+}
+
+/* pc 버전 작업  1em = 16px */
+
+
+@media (min-width: 47em) {
+	#header {
+		position: fixed;
+		width: 100%;
+		height: 80px;
+
+		top: 0;
+		left: 0;
+
+		z-index: 99999;
+	}
+
+
+#header h1 {
+	width: 50%;
+}
+
+#header h1 .logo {
+	width: 280px;
+	height: 80px;
+	}
+
+
+#header .logo img {
+	margin-top: 30px;
+}
+
+#header .buttons {
+	position: absolute;
+	width: 50%;
+
+	left: 50% ;
+	top: 0;
+}
+
+#header .buttons li {
+	height: 80px;
+}
+}
+
+
+.main-content .product-group-link {
+	position: relative;
+	display: block;
+	
+
+	width: 100%;
+	height: 56.25%;
+	border: solid 10px red;
+	
+	overflow: hidden;	
+}
+
+
+.main-content .product-group-link img {
+	width: 100%;
+	height: 100%;
+}
+
+.main-content .product-group .link-text {
+	position: absolute;
+
+	left: 25px;
+	bottom: 25px;
+
+	color: black;
+	font-size: 25px;
+}
+
+@media (min-width 47em) {
+	.main-content {
+		padding-top: 80px;
+	}
+}
+
+
+
+
+@media (min-width: 60em) {
+	.main-content {
+		overflow: hidden;
+	}
+
+	.main-content .product-group-link {
+		float: left;
+		width: 50%;
+		height: 28.125%;
+	}
+
+}
+
+
+#footer {
+	position: relative;
+	/*background-color: yellow;*/
+
+	padding-bottom: 66px;
+}
+
+#footer .left-nav {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#footer .left-nav li {
+	padding: 5px 0;
+
+}
+
+
+#footer .right-methods {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+#footer .right-methods li {
+	display: inline-block;
+	padding: 7px 4px;
+
+}
+
+#footer .right-methods .payment-icon {
+	display: inline-block;
+
+	width: 30px;
+	height: 20px;
+}
+
+#footer .right-methods .payment-icon.one {
+	background-color: black;	
+}
+#footer .right-methods .payment-icon.two {
+	background-color: green;	
+}
+#footer .right-methods .payment-icon.three {
+	background-color: hotpink;	
+}
+#footer .right-methods .payment-icon.four {
+	background-color: orangered;	
+}
+#footer .right-methods .payment-icon.five {
+	background-color: lightcoral;	
+}
+
+#footer .to-top-button {
+	position: absolute;
+	display: block;
+
+	width: 66px;
+	height: 66px;
+	background-color: green;
+
+	bottom: 0;
+	left: 50%;
+	margin-left: -33px;
+
+}
+
+@media(min-width: 60em) {
+	#footer {
+		height: 66px;
+	}
+
+	#footer .left-nav {
+		float: left;
+
+		width: 50%;
+		background-color: yellow;
+		text-align: left;
+	
+		padding-top: 32px;
+		padding-left: 40px;
+	}
+
+	#footer .right-methods {
+		float: right;
+
+		width: 50%;
+		background-color: yellowgreen;
+
+		margin: 0;
+		padding-top: 32px;
+		padding-right: 40px;
+
+		text-align: right;
+	}
+
+	/* 왼쪽하단 한줄로 정렬 */
+	#footer ul, #footer li, #footer h3 {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	#footer .left-nav a {
+		font-size: 14px;
+		padding: 0 5px;
+		/*line-height: 20px;*/
+	}
+
+	#footer .right-methods li {
+		padding: 0 4px;
+	}
+
+	#footer h3 {
+		padding-right: 10px;
+	}
+
+
+
+}
+
+
+
+
+
+

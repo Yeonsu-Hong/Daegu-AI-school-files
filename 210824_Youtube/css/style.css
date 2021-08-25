@@ -13,6 +13,7 @@
 html, body {
 	width: 100%;
 	height: 100%;
+	background-color: #212121;
 }
 
 ol, ul {
@@ -87,6 +88,10 @@ input:focus {
 	width: 100%;
 	height: 56px;
 	background-color: #212121;
+
+	padding: 0 16px;
+
+	z-index: 99999;
 }
 
 
@@ -115,7 +120,7 @@ input:focus {
 	position: absolute;
 	width: 225px;
 	height: 100%;
-	background-color: grey;
+	/*background-color: grey;*/
 }
 
 
@@ -184,6 +189,7 @@ input:focus {
 	background-color: yellow;
 }
 #youtube-top-nav .nav-right .btn-login {
+	display: inline-block;
 	border: solid 1px #3ea6ff;
 	padding: 10px 12px 8px;
 	font-size: 14px;
@@ -241,6 +247,102 @@ input:focus {
 }
 
 
+/*8/25 수*/
+
+#youtube-left-content .nav-section {
+	padding: 8px 0;
+	border-bottom: solid 1px rgba(255, 255, 255, .1);
+}
+
+#youtube-left-content .nav-section .nav-title-wrap {
+	padding: 8px 24px;
+}
+
+#youtube-left-content .nav-section .nav-title-wrap h2 {
+	color: #aaaaaa;
+	font-size: 15px;
+}
+
+#youtube-left-content .nav-section .nav-body {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+#youtube-left-content .nav-section .nav-body ul {
+	
+}
+
+#youtube-left-content .nav-section .nav-body li {
+	
+}
+
+#youtube-left-content .nav-section .nav-body li a {
+	/*display: block;*/
+	height: 40px;
+	padding: 0 24px;
+}
+
+#youtube-left-content .nav-section .nav-body li .icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: #ffffff;
+	margin-right: 24px;
+}
+
+#youtube-left-content .nav-section .nav-body li span {
+	font-size: 13px;
+	color: #ffffff;
+}
+
+#youtube-left-content .nav-section .nav-body .txt-wrap {
+	padding: 0 24px;
+}
+
+#youtube-left-content .nav-section .nav-body .txt-wrap p {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 13px;
+}
+/* display: inline-block 중요 */
+#youtube-left-content .nav-section .nav-body .txt-wrap .btn-login {
+	display: inline-block;
+
+	border: solid 1px #3ea6ff;
+	padding: 10px 12px 8px;
+	font-size: 14px;
+	color: #3ea6ff;
+
+	margin-top: 12px;
+}
+
+
+/* 왼쪽 하단 작업 */
+#youtube-left-content #youtube-footer {
+	padding-bottom: 150px;
+}
+
+#youtube-left-content #youtube-footer .txt-wrap {
+	padding: 12px 24px 0;
+}
+
+#youtube-left-content #youtube-footer .txt-wrap a {
+	margin-right: 8px;
+
+	color: #aaaaaa;
+	font-size: 12px;
+	font-weight: 500;
+
+	/*개발자, 정책 및 안전 잘리는거 안잘리도록 설정*/
+	word-break: keep-all;
+}
+
+#youtube-left-content #youtube-footer .txt-wrap p {
+	font-size: 12px;
+	color: #717171 ;
+	font-weight: 400;
+}
+
 
 
 /* 유튜브 메인 */
@@ -253,7 +355,111 @@ input:focus {
 	right: 0;
 	bottom: 0;
 
-	background-color: grey;
+	background-color: #212121;
+}
+
+
+#youtube-main-content {
+	width: 100%;
+	height: 100%;
+	padding: 24px;
+}
+
+#youtube-main-content ul {
+	align-items: flex-start;
+	align-content: flex-start;
+	width: 100%;
+	height: 100%;
+}
+
+#youtube-main-content ul li {
+	width: 24%;
+	background-color: #212121;
+	margin-bottom: 40px;
+}
+
+#youtube-main-content ul li .video-thumbnail {
+	width: 100%;
+
+}
+
+#youtube-main-content ul li .video-thumbnail a {
+	position: relative;
+
+	display: block;	
+	width: 100%;
+
+}
+
+#youtube-main-content ul li .video-thumbnail img {
+	width: 100%;
+
+}
+
+#youtube-main-content ul li .video-thumbnail .time {
+	position: absolute;
+
+	background-color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	color: #ffffff;
+
+	padding: 3px 4px;
+
+	bottom: 4px;
+	right: 4px;
+}
+
+
+#youtube-main-content ul li .video-txt-wrap {
+	align-items: flex-start;
+	margin-top: 12px;
+}
+
+
+#youtube-main-content ul li .video-txt-wrap .image-link {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+
+	margin-right: 12px;
+}
+
+#youtube-main-content ul li .video-txt-wrap .image-link img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#youtube-main-content ul li .video-txt-wrap .txt {
+	width: calc( 100% - 48px)
+}
+#youtube-main-content ul li .video-txt-wrap .txt h3 {
+	font-size: 15px;
+	margin-bottom: 6px;
+
+}
+
+#youtube-main-content ul li .video-txt-wrap .txt h3 .title-link {
+	color: #ffffff;
+}
+
+#youtube-main-content ul li .video-txt-wrap .txt p {
+	font-size: 12px;
+}
+
+#youtube-main-content ul li .video-txt-wrap .txt p .channel-link {
+	color: #aaaaaa;
+}
+
+#youtube-main-content ul li .video-txt-wrap .txt .txt-bottom {
+	
+}
+
+
+#youtube-main-content ul li .video-txt-wrap .txt .txt-bottom .count,
+#youtube-main-content ul li .video-txt-wrap .txt .txt-bottom .date {
+	font-size: 12px;
+	color: #aaaaaa;
 }
 
 

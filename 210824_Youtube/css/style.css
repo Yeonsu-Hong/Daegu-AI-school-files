@@ -466,6 +466,7 @@ input:focus {
 	color: #aaaaaa;
 }
 
+/* 8/26 목요일 */
 
 /* 유튜브 채널 페이지 */
 
@@ -621,7 +622,8 @@ input:focus {
 
 
 .channel-playlists-section {
-	padding-top: 24px 0;
+
+	padding: 24px 0;
 	border-bottom: solid 1px grey;
 }
 
@@ -636,7 +638,7 @@ input:focus {
 }
 
 .channel-playlists-section .playlists-header .play-wrap {
-	width: 85px;
+	width: 100px;
 }
 
 .channel-playlists-section .playlists-header .play-wrap .icon-play {

@@ -304,7 +304,7 @@ input:focus {
 	font-weight: 400;
 	font-size: 13px;
 }
-/* display: inline-block 중요 */
+/* a태그가 inline이라서 겹침 문제가 발생 display: inline-block 중요 */
 #youtube-left-content .nav-section .nav-body .txt-wrap .btn-login {
 	display: inline-block;
 
@@ -317,7 +317,10 @@ input:focus {
 }
 
 
-/* 왼쪽 하단 작업 */
+/* 왼쪽 푸터 */
+
+
+
 #youtube-left-content #youtube-footer {
 	padding-bottom: 150px;
 }
@@ -373,7 +376,7 @@ input:focus {
 }
 
 #youtube-main-content ul li {
-	width: 24%;
+	width: 24%;/* 각각 4개씩이니까 25%보다는 작게 */
 	background-color: #212121;
 	margin-bottom: 40px;
 }
@@ -390,7 +393,7 @@ input:focus {
 	width: 100%;
 
 }
-
+/* 이미지 한쪽에다가만 width100%를 지정하면 비율을 유지한 상태에서 높이값은 자동으로 맞춰진다.*/
 #youtube-main-content ul li .video-thumbnail img {
 	width: 100%;
 
@@ -432,6 +435,7 @@ input:focus {
 
 #youtube-main-content ul li .video-txt-wrap .txt {
 	width: calc( 100% - 48px)
+	/* 위에 .image-link의 width 36px + margin-right 12px = 48px*/
 }
 #youtube-main-content ul li .video-txt-wrap .txt h3 {
 	font-size: 15px;
@@ -463,3 +467,419 @@ input:focus {
 }
 
 
+/* 유튜브 채널 페이지 */
+
+.channel-container {
+	width: 1284px;
+	margin: 0 auto;
+}
+
+#youtube-channel-content #channel-banner {
+	width: 100%;
+	height: 250px;
+	background-color: darkblue;
+}
+
+#youtube-channel-content #channel-header {
+	padding: 16px 0 4px;
+		background-color: rgba(24, 24, 24, 1) ;
+}
+
+#youtube-channel-content #channel-header .channel-profile-wrap {
+	
+}
+
+#youtube-channel-content #channel-header .channel-profile-wrap .channel-profile img {
+	width: 80px;
+	height: 80px;
+
+	border-radius: 50%;
+	margin-right: 24px;
+}
+
+#youtube-channel-content #channel-header .channel-profile-wrap .channel-profile .txt-wrap {
+	
+}
+
+#youtube-channel-content #channel-header .channel-profile-wrap .channel-profile .txt-wrap h2 {
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+#youtube-channel-content #channel-header .channel-profile-wrap .channel-profile .txt-wrap p {
+	color: #aaaaaa;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+/* 구독 버튼 */
+
+#youtube-channel-content #channel-header .channel-profile-wrap .btn-subscribe {
+	padding: 10px 20px;	
+	background-color: red;
+	border-radius: 5px;
+
+	color: #ffffff;
+	font-size: 16px;
+}
+
+#channel-nav {
+	background-color: rgba(24, 24, 24, 1) ;
+}
+
+
+#channel-nav ul {
+	
+}
+
+#channel-nav li {
+	
+}
+
+#channel-nav li a {
+	display: block;
+	height: 47px;
+
+	padding: 0 32px;
+
+	line-height: 47px;
+
+	border-bottom: solid 2px transparent;
+	color: #aaaaaa;
+}
+
+#channel-nav li a:hover {
+	color: #ffffff;
+}
+
+
+#channel-nav li a.active {
+	border-bottom: solid 2px #ffffff;
+	color: #ffffff;
+}
+
+#channel-recent {
+	align-items: flex-start;
+	padding: 24px 0;
+
+	border-bottom: solid 1px grey;
+	
+}
+
+
+#channel-recent .thumbnail-wrap {
+	position: relative;
+
+	width: 246px;
+	height: 148px;
+	margin-right: 16px;
+}
+
+#channel-recent .thumbnail-wrap img {
+	width: 100%;
+	height: 100%;
+}
+
+
+#channel-recent .thumbnail-wrap .mark {
+	position: absolute;
+	background-color: red;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 4px 8px 2px;
+	border-radius: 5px;
+
+	right: 4px;
+	bottom: 4px;
+}
+
+#channel-recent .txt-wrap {
+	width: 600px;
+}
+
+
+#channel-recent .txt-wrap h2 {
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 400;
+
+}
+
+#channel-recent .txt-wrap .channel {
+	font-size: 14px;
+	color: #aaaaaa;
+}
+
+#channel-recent .txt-wrap .desciption {
+	padding-top: 8px;
+	font-size: 14px;
+	font-size: 14px;
+	color: #aaaaaa;
+}
+
+
+
+.channel-playlists-section {
+	padding-top: 24px 0;
+	border-bottom: solid 1px grey;
+}
+
+.channel-playlists-section .playlists-header {
+
+}
+
+.channel-playlists-section .playlists-header h3 {
+	margin-right: 20px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.channel-playlists-section .playlists-header .play-wrap {
+	width: 85px;
+}
+
+.channel-playlists-section .playlists-header .play-wrap .icon-play {
+	width: 24px;
+	height: 24px;
+	background-color: #ffffff;
+}
+
+.channel-playlists-section .playlists-header .play-wrap .play-link {
+	font-size: 14px;
+	color: #aaaaaa;
+	margin-left: 8px;
+}
+
+.channel-playlists-section .playlists-body {
+	margin-top: 24px;
+
+}
+
+.channel-playlists-section .playlists-body ul {
+
+}
+
+.channel-playlists-section .playlists-body li {
+	width: 210px;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail {
+	width: 100%;
+	height: 118px;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail a {
+	position: relative;
+
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail img  {
+	width: 100%;
+	height: 100%;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail .time  {
+	position: absolute;
+
+	font-size: 12px;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 4px 8px 2px;
+	border-radius: 5px;
+
+	bottom: 4px;
+	right: 4px;
+}
+
+.channel-playlists-section .playlists-body .channel-txt-wrap {
+	margin-top: 8px;
+}
+
+.channel-playlists-section .playlists-body .channel-txt-wrap h3 {
+	font-size: 15px;
+	margin-bottom: 6px;
+}
+
+.channel-playlists-section .playlists-body .channel-txt-wrap h3 a {
+	color: #ffffff;
+}
+
+.channel-playlists-section .playlists-body .channel-txt-wrap p {
+	font-size: 12px;
+}
+
+.channel-playlists-section .playlists-body .channel-txt-wrap p a {
+	color: #aaaaaa;
+}
+
+
+.channel-playlists-section .playlists-body .channel-txt-wrap .txt-bottom {
+	
+}
+
+.channel-playlists-section .playlists-body .channel-txt-wrap .txt-bottom .count,
+.channel-playlists-section .playlists-body .channel-txt-wrap .txt-bottom .date
+{
+	font-size: 12px;
+	color: #aaaaaa;
+}
+
+
+/* 탐색 페이지 */
+ .explore-container {
+ 	width: 1280px;
+ 	margin: 0 auto;
+ }
+
+	
+#explore-nav {
+	padding: 12px 0 8px;
+}
+
+	
+#explore-nav ul {
+
+}
+
+#explore-nav li {
+	overflow: hidden;
+	/*border-radius: 5px;*/
+
+	width: 210px;
+	height: 116px;
+
+	/*background-color: grey;*/
+}
+
+#explore-nav li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#explore-nav li a:hover {
+	background-color: darkgrey;
+}
+
+
+
+#explore-nav li .icon {
+	display: block;
+
+	width: 32px;
+	height: 32px;
+	background-color: red;
+
+	margin-bottom: 25px;
+}
+
+
+#explore-nav li span {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+#popular-section {
+	margin-top: 24px;
+}
+
+
+#popular-section h2 {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+
+#popular-section ul {
+	margin-top: 24px;
+}
+
+#popular-section li {
+	margin-bottom: 16px;
+}
+
+#popular-section a {
+	align-items: flex-start;
+}
+
+
+#popular-section li .image-wrap {
+	position: relative;
+
+	width: 246px;
+	height: 148px;
+	margin-right: 16px;
+}
+
+#popular-section li .image-wrap img {
+	width: 100%;
+	height: 100%;
+}
+
+#popular-section li .image-wrap .time {
+	position: absolute;
+
+	padding: 4px 8px 4px;
+	background-color: #212121;
+	color: #ffffff;
+	font-size: 12px;
+	border-radius: 5px;
+
+	bottom: 4px;
+	right: 4px;
+}
+
+#popular-section li .txt-wrap {
+	width: 600px;
+}
+
+#popular-section li .txt-wrap h3 {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+#popular-section li .txt-wrap .video-info {
+	color: #aaaaaa;
+	font-size: 14px;
+}
+
+#popular-section li .txt-wrap .video-info span:after {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background-color: #aaaaaa;
+	border-radius: 50%;
+
+	margin: 6px 4px 0 8px;
+    vertical-align: top;
+}
+
+#popular-section li .txt-wrap .video-info span:last-child:after {
+	content: none;
+}
+
+#popular-section li .txt-wrap .video-info .channel {
+	
+}
+
+#popular-section li .txt-wrap .video-info .count {
+	
+}
+
+#popular-section li .txt-wrap .video-info .date {
+	
+}
+
+#popular-section li .txt-wrap .desciption {
+	font-size: 14px;
+	color: #aaaaaa;
+}

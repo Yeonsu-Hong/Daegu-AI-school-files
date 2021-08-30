@@ -1,9 +1,10 @@
+/*초기화 작업*/
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-body {
 }
 
 
@@ -61,6 +62,8 @@ input:focus {
 	margin: 0 auto;
 }
 /* border가 생성된 것을 볼수 있다. */
+
+
 #main-nav {
 	overflow: hidden;
 	background-color: rgb(7, 189, 120);
@@ -69,7 +72,7 @@ input:focus {
 }
 
 #main-nav ul {
-	overflow-y: auto;
+	overflow-x: auto;
 	/*overflow-y: all;*/
 
 	display: flex;
@@ -81,8 +84,8 @@ input:focus {
 
 	white-space: nowrap;
 }
-/* 보기싫은 스크롤 사라지게 하기 
-
+ 보기싫은 스크롤 사라지게 하기 
+/*
 #main-nav ul {
 	-ms-overflow-style: none;
 	scrollbar-width:  none;
@@ -91,7 +94,7 @@ input:focus {
 #main-nav ul::-webkit-scrollbar {
 	display: none;
 }
- */
+  ms explorer edge 브라우저에 영향을 준다. scrollbar-width는 firefox */
 
 
 
@@ -160,6 +163,8 @@ input:focus {
 }
 
 /*8가지의 메뉴판*/
+
+
 #header .header-nav {
 	width: 360px;
 	margin: 0 auto;
@@ -211,6 +216,28 @@ input:focus {
 	background-color: purple;
 }
 
+#header .header-nav .icon-3 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-4 {
+	background-color: purple;
+}
+#header .header-nav .icon-5 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-6 {
+	background-color: purple;
+}
+
+#header .header-nav .icon-7 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-8 {
+	background-color: purple;
+}
 
 #header .header-nav span {
 	display: block;
@@ -350,7 +377,7 @@ input:focus {
 
 
 #now ul { 
-	overflow-x: auto;
+	overflow-y: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -494,7 +521,7 @@ input:focus {
 	left: 50%;
 	/*width: auto;*/
 	/*height: 100%;*/
-	transform: translateX(-50%);
+	transform: translate(-50%);
 
 }
 
@@ -641,6 +668,338 @@ input:focus {
 	font-size: 14px;
 	font-weight: 400;
 	color: #03c95b;
+}
+
+
+/* 8/30 */
+
+#talk {
+	padding: 20px 0;
+}
+
+/* overflow: hidden값을 주어야 talk부분도 높이값이 생김*/
+#talk ul {
+	overflow: hidden;
+
+}
+
+#talk ul li {
+	position: relative;
+	width: 300px;
+	background-color: #ffffff;
+	padding: 15px 0 15px;
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+
+	margin-top: 10px;
+}
+
+
+
+#talk ul li:last-child {
+	margin-bottom: 0;
+}
+
+
+
+#talk ul li .icon-arrow {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	background-color: #0ac666;
+
+	margin-bottom: 12px;
+}
+
+#talk ul li img {
+	width: 52px;
+	height: 52px;
+
+	border-radius: 50%;
+}
+
+
+
+#talk ul li a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	padding: 0 20px;
+
+	color: #000000;
+}
+
+	/* 왼쪽 */
+
+#talk ul .left-list {
+
+	float: left;
+
+
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+
+
+
+
+#talk ul .left-list .icon-arrow-left {
+	background-color: purple;
+}
+
+
+#talk ul .left-list .content-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+
+#talk ul .left-list .content-wrap h3 {
+	color:  purple;
+}
+
+#talk ul .left-list .content-wrap img {
+	margin-left: 8px;
+}
+
+
+#talk ul .left-list .content-wrap .txt-wrap {
+
+}
+
+#talk ul .content-wrap .txt-wrap h3 {
+		font-size: 14px;
+		font-weight: 600;
+}
+
+#talk ul .content-wrap .txt-wrap p {
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 3px;
+}
+
+#talk ul .left-list .content-wrap img {
+	margin-left: 8px;
+
+
+}
+
+	/* 오른쪽 */
+
+
+#talk ul .right-list {
+
+	float: right;
+
+
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+}
+
+
+
+
+#talk ul .right-list .icon-arrow-left {
+	background-color: #0ac666;
+}
+
+
+#talk ul .right-list .content-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+
+#talk ul .right-list .content-wrap h3 {
+	color:  #0ac666;
+}
+
+#talk ul .right-list .content-wrap img {
+	margin-left: 8px;
+}
+
+
+#talk ul .right-list .content-wrap .txt-wrap {
+
+}
+
+#talk ul .content-wrap .txt-wrap h3 {
+		font-size: 14px;
+		font-weight: 600;
+}
+
+#talk ul .content-wrap .txt-wrap p {
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 3px;
+}
+
+#talk ul .right-list .content-wrap img {
+	margin-right: 8px;
+
+
+}
+
+
+#today {
+	padding: 50px;
+}
+
+#today .container {
+	padding: 0 20px;
+}
+
+#today .content-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	border-top: solid 1px #e0e4ea;
+
+	padding-top: 24px;
+	margin-bottom: 10px;
+
+}
+
+#today .content-header h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#today .content-header a {
+	color: #767678;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+#today .content-body {
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 8px;
+
+	overflow: hidden;
+
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+
+
+}
+
+#today .content-body .banner {
+	width: 100%;
+
+}
+
+#today .content-body .bottom-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+
+	padding: 14px 13px 12px 15px;
+}
+
+#today .content-body .bottom-wrap .icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: purple;
+	border-radius: 50%;
+
+	margin-right: 8px;
+
+}
+
+#today .content-body .bottom-wrap .txt-wrap {
+
+}
+
+#today .content-body .bottom-wrap .txt-wrap h3 {
+	font-size: 10px;
+	font-weight: 600;
+}
+
+#today .content-body .bottom-wrap .txt-wrap p {
+	font-size: 13px;
+	font-weight: 400;
+
+	line-height: 16px;
+	color: #929294;
+
+}
+
+
+#footer {
+	padding: 35px 0 80px;
+	padding: 3px 9px;
+	color: #929294;
+	font-size: 13px;
+}
+
+#footer .txt-wrap {
+	text-align: center;
+}
+
+#footer .txt-wrap a {
+	position: relative;
+	display: inline-block;
+	padding: 3px 9px;
+	color: #929294 ;
+	font-size: 13px;
+	font-weight: 400;
+
+	letter-spacing: -.5px;
+}
+
+#footer .txt-wrap a:before {
+	content: '';
+	display: block;
+	position: absolute;
+
+	top: 7px;
+	left: 0;
+
+
+	width: 1px;
+	height: 10px;
+	background-color: #d7dfe7;
+}
+/*
+#footer .txt-wrap a:nth-child(1):before,
+#footer .txt-wrap a:nth-child(4):before {
+	content: none;
+}*/
+
+#footer .txt-wrap .link a:first-child:before{
+	content: none;
+}
+
+
+
+#footer h1 {
+	text-align: center;
+	/*background-color: #d7dfe7;*/
+
+}
+
+#footer h1 img{
+	width: 74px;
+
 }
 
 

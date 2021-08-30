@@ -671,7 +671,7 @@ input:focus {
 }
 
 
-/* 8/30 */
+/* 8/30 월요일 */
 
 #talk {
 	padding: 20px 0;
@@ -798,7 +798,6 @@ input:focus {
 
 	float: right;
 
-
 	border-top-left-radius: 60px;
 	border-bottom-left-radius: 60px;
 }
@@ -853,7 +852,7 @@ input:focus {
 
 
 #today {
-	padding: 50px;
+	padding: 50px 0;
 }
 
 #today .container {

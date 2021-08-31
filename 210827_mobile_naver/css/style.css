@@ -1,0 +1,1004 @@
+/*초기화 작업*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+input {
+	border: none;
+	background-color: transparent ;
+}
+
+input:focus {
+	outline: none;
+	/*border: none;*/
+}
+
+
+
+
+
+
+
+/* 모바일 버전 화면이 center에 배치 되도록 진행 */
+
+.wrapper {
+	background-color: #eaeef3;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	width: 375px;
+	/* height vh 단위 사용 지정 영역 풀사이즈를 유지하고 싶을때 vh 단위 사용 아래 vh에서 v는 viewport h는 height를 의미한다. 
+	    100vh 는 100%를 맞추겠다는 의미이다.  */
+	height: 100vh;
+	/*background-color: blue;*/
+
+	margin: 0 auto;
+}
+/* border가 생성된 것을 볼수 있다. */
+
+
+#main-nav {
+	overflow: hidden;
+	background-color: rgb(7, 189, 120);
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}
+
+#main-nav ul {
+	overflow-x: auto;
+	/*overflow-y: all;*/
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+
+	white-space: nowrap;
+}
+ 보기싫은 스크롤 사라지게 하기 
+/*
+#main-nav ul {
+	-ms-overflow-style: none;
+	scrollbar-width:  none;
+}
+
+#main-nav ul::-webkit-scrollbar {
+	display: none;
+}
+  ms explorer edge 브라우저에 영향을 준다. scrollbar-width는 firefox */
+
+
+
+#main-nav ul li {
+	height: 54px;
+	text-align: center;
+}
+
+#main-nav ul li a {
+	
+	height: 100%;
+	line-height: 54px;
+
+	color: rgb(141, 223, 183);
+	padding: 0 10px;
+}
+
+/*검색 영역*/
+
+#header {
+	background-color: #f4f6f8;
+	padding: 120px 0 80px;
+}
+
+#header .search-wrap {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+
+	position: relative;
+	background-color: #ffffff;
+
+	width: 333px;
+	border: solid 1px rgb(7, 189, 120);
+	border-radius: 10px;
+	margin: 0 auto 24px;
+
+}
+
+#header .search-wrap .link-logo {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background-color: green;
+
+}
+
+#header .search-wrap input {
+
+	width: calc(100% - 78px);
+	height: 22px;
+
+	font-size: 18px;
+	padding: 0 20px;
+}
+
+#header .search-wrap .link-voice {
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-color: green;
+}
+
+/*8가지의 메뉴판*/
+
+
+#header .header-nav {
+	width: 360px;
+	margin: 0 auto;
+	/*background-color: grey;*/
+}
+
+#header .header-nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+
+	width: 100%;
+}
+
+#header .header-nav li {
+	width: 25%;
+	padding-top: 12px;
+
+}
+#header .header-nav a {
+	display: block;
+	width: 100%;
+
+	text-align: center;
+}
+
+#header .header-nav .icon {
+	/*inline-block 기본 margin 값이 들어가 있다.*/
+	display: inline-block;
+
+	width: 44px;
+	height: 44px;
+	border-radius: 8px;
+
+
+	border: solid 1px grey;  
+	background-color: #ffffff;
+
+}
+
+#header .header-nav .icon-1 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-2 {
+	background-color: purple;
+}
+
+#header .header-nav .icon-3 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-4 {
+	background-color: purple;
+}
+#header .header-nav .icon-5 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-6 {
+	background-color: purple;
+}
+
+#header .header-nav .icon-7 {
+	background-color: blue;
+}
+
+#header .header-nav .icon-8 {
+	background-color: purple;
+}
+
+#header .header-nav span {
+	display: block;
+
+	font-size: 11px;
+	background-color: #f4f6f8;
+	margin-top: 5px;
+}
+
+#banner-1 {
+	background-color: #f4f6f8;
+}
+
+#banner-1 .banner-wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#banner-1 .banner-wrap img {
+	width: 100%;
+}
+
+
+/* 날씨 */
+
+#weather {
+	background-color: #ffffff;
+}
+
+#weather .container {
+	padding: 0 20px;
+}
+
+#weather .weather-top {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	padding: 22px 0 16px;
+}
+
+#weather .weather-top .weather-left {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+#weather .weather-top .weather-left img {
+	width: 30px;
+	height: 30pxs;
+	border-radius: 50%;
+
+	margin-right: 15px;
+}
+#weather .weather-top .weather-left .txt-wrap {
+	
+}
+
+#weather .weather-top .weather-left .txt-wrap h3 {
+	font-size: 16px;
+}
+
+#weather .weather-top .weather-left .txt-wrap p {
+	font-size: 14px;
+}
+
+#weather .weather-top .weather-left .txt-wrap p span {
+	color: #00d01d;
+}
+
+/* 오른쪽 */
+
+
+#weather .weather-top .weather-right {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+#weather .weather-top .weather-right span {
+	font-size: 14px;
+	margin-right: 8px;
+}
+
+#weather .weather-top .weather-right .icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	border-radius: 50%;
+
+	color: #767668;
+}
+
+#weather .weather-bottom {
+	padding: 6px 0 30px;
+}
+
+#weather .weather-bottom p {
+	color: #767678;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: -.5px;
+
+	text-align: center;
+}
+
+
+
+
+/* Now  */
+
+#now { 
+	background-color: #ffffff;
+	padding: 20px 0 16px;
+	margin-top: 10px;
+ }
+
+#now h2 { 
+	font-size: 18px;
+	font-weight: 700;
+	color: red;
+
+	margin-bottom: 14px;
+	margin-left: 20px;
+ }
+/* margin-left를 사용할지 margin-right를 사용할지 design에 따라 달라진다. */
+
+
+#now ul { 
+	overflow-y: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+ 	
+ 	padding-left: 20px;
+ }
+
+
+
+ #now ul li { 
+	margin-right: 10px;
+ }
+
+  #now ul li:last-child { 
+	margin-right: 0;
+ }
+
+#now ul li a {
+	color: black;
+}
+
+
+#now ul li a img {
+	width: 100px;
+	height: 138px;
+
+	border-radius: 5px;
+}
+
+
+
+#now ul li a p {
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+#now .btn-wrap {
+	overflow: hidden;
+	width: 335px;
+	border-radius: 10px;
+	background-color: #f5f8fb;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	margin: 20px auto 0;
+} 
+
+#now .btn-wrap a {
+	display: block;
+	width: 50%;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+
+	color: #767678;
+}
+
+#now .btn-wrap .btn-now {
+	
+}
+
+#now .btn-wrap .btn-shopping {
+	
+}
+
+#now .btn-wrap .btn-shopping:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 14px;
+
+	margin-top: 15px;
+	background-color: rgba(125, 127, 133, .2);
+
+	vertical-align: top;
+
+	float: left;
+
+	}
+
+
+/*before float을 사용하는 순간 3차원적인 특징을 가지게 된다.*/
+
+
+
+#banner-2 {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#banner-2 .banner-wrap {
+	width: 320px;
+	margin: 0 auto;
+}
+
+#banner-2 .banner-wrap img {
+	width: 100%;
+}
+
+#banner-3 {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#banner-3 .banner-wrap {
+	width: 320px;
+	margin: 0 auto;
+}
+
+#banner-3 .banner-wrap img {
+	width: 100%;
+}
+
+#banner-4 {
+	overflow: hidden;
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#banner-4 .banner-wrap {
+	width: 100%;
+	/*margin: 0 auto;*/
+	height: 155px;
+}
+
+#banner-4 .banner-wrap img {
+	position: relative;
+
+	height: 100%;
+	
+
+	/* 중앙정렬공식 */
+	left: 50%;
+	/*width: auto;*/
+	/*height: 100%;*/
+	transform: translate(-50%);
+
+}
+
+		/* 코로나 */
+
+#corona {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#corona .container {
+	padding: 0 20px;
+}
+
+#corona .corona-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+#corona .corona-wrap a {
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+
+	padding: 20px 0;
+}
+
+
+#corona .corona-wrap a.right-corona {
+	padding-left: 11px;
+}
+
+
+#corona .corona-wrap a.right-corona:before {
+	content: '';
+	display: block;
+
+	position: absolute;
+	width: 1px;
+	height: 42px;
+	background-color: #efeff0;
+
+	top: 20px;
+	left: 0;
+
+
+
+}
+
+#corona .corona-wrap img {
+	width: 35px;
+	margin-right: 8px;
+
+	border-radius: 50%;
+}
+
+#corona .corona-wrap .txt-wrap {
+
+}
+#corona .corona-wrap .txt-wrap h3 {
+	font-size: 16px;
+	font-weight: 700;
+
+	color: #000000;
+}
+
+#corona .corona-wrap .txt-wrap p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 4px;
+
+	color: #000000;
+
+}
+
+
+#ai {
+	background-color: #ffffff;
+	margin-top: 10px;
+
+}
+
+#ai .container {
+	padding: 0 20px;
+}
+
+#ai .ai-wrap  {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+		padding: 20px 0;
+}
+
+#ai .ai-wrap .ai-left {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+#ai .ai-wrap .ai-left img {
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+
+	margin-right: 8px;
+}
+
+#ai .ai-wrap .ai-left .txt-wrap {
+
+}
+
+#ai .ai-wrap .ai-left p {
+	font-size: 15px;
+	color: #424242;
+	font-weight: 400;
+}
+
+#ai .ai-wrap .ai-right {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+#ai .ai-wrap .ai-right span {
+	font-size: 14px;
+	font-weight: 400;
+	color: #03c95b;
+}
+
+
+/* 8/30 월요일 */
+
+#talk {
+	padding: 20px 0;
+}
+
+/* overflow: hidden값을 주어야 talk부분도 높이값이 생김*/
+#talk ul {
+	overflow: hidden;
+
+}
+
+#talk ul li {
+	position: relative;
+	width: 300px;
+	background-color: #ffffff;
+	padding: 15px 0 15px;
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+
+	margin-top: 10px;
+}
+
+
+
+#talk ul li:last-child {
+	margin-bottom: 0;
+}
+
+
+
+#talk ul li .icon-arrow {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	background-color: #0ac666;
+
+	margin-bottom: 12px;
+}
+
+#talk ul li img {
+	width: 52px;
+	height: 52px;
+
+	border-radius: 50%;
+}
+
+
+
+#talk ul li a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	padding: 0 20px;
+
+	color: #000000;
+}
+
+	/* 왼쪽 */
+
+#talk ul .left-list {
+
+	float: left;
+
+
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+
+
+
+
+#talk ul .left-list .icon-arrow-left {
+	background-color: purple;
+}
+
+
+#talk ul .left-list .content-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+
+#talk ul .left-list .content-wrap h3 {
+	color:  purple;
+}
+
+#talk ul .left-list .content-wrap img {
+	margin-left: 8px;
+}
+
+
+#talk ul .left-list .content-wrap .txt-wrap {
+
+}
+
+#talk ul .content-wrap .txt-wrap h3 {
+		font-size: 14px;
+		font-weight: 600;
+}
+
+#talk ul .content-wrap .txt-wrap p {
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 3px;
+}
+
+#talk ul .left-list .content-wrap img {
+	margin-left: 8px;
+
+
+}
+
+	/* 오른쪽 */
+
+
+#talk ul .right-list {
+
+	float: right;
+
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+}
+
+
+
+
+#talk ul .right-list .icon-arrow-left {
+	background-color: #0ac666;
+}
+
+
+#talk ul .right-list .content-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+
+#talk ul .right-list .content-wrap h3 {
+	color:  #0ac666;
+}
+
+#talk ul .right-list .content-wrap img {
+	margin-left: 8px;
+}
+
+
+#talk ul .right-list .content-wrap .txt-wrap {
+
+}
+
+#talk ul .content-wrap .txt-wrap h3 {
+		font-size: 14px;
+		font-weight: 600;
+}
+
+#talk ul .content-wrap .txt-wrap p {
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 3px;
+}
+
+#talk ul .right-list .content-wrap img {
+	margin-right: 8px;
+
+
+}
+
+
+#today {
+	padding: 50px 0;
+}
+
+#today .container {
+	padding: 0 20px;
+}
+
+#today .content-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	border-top: solid 1px #e0e4ea;
+
+	padding-top: 24px;
+	margin-bottom: 10px;
+
+}
+
+#today .content-header h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#today .content-header a {
+	color: #767678;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+#today .content-body {
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 8px;
+
+	overflow: hidden;
+
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+
+
+}
+
+#today .content-body .banner {
+	width: 100%;
+
+}
+
+#today .content-body .bottom-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+
+	padding: 14px 13px 12px 15px;
+}
+
+#today .content-body .bottom-wrap .icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: purple;
+	border-radius: 50%;
+
+	margin-right: 8px;
+
+}
+
+#today .content-body .bottom-wrap .txt-wrap {
+
+}
+
+#today .content-body .bottom-wrap .txt-wrap h3 {
+	font-size: 10px;
+	font-weight: 600;
+}
+
+#today .content-body .bottom-wrap .txt-wrap p {
+	font-size: 13px;
+	font-weight: 400;
+
+	line-height: 16px;
+	color: #929294;
+
+}
+
+
+#footer {
+	padding: 35px 0 80px;
+	padding: 3px 9px;
+	color: #929294;
+	font-size: 13px;
+}
+
+#footer .txt-wrap {
+	text-align: center;
+}
+
+#footer .txt-wrap a {
+	position: relative;
+	display: inline-block;
+	padding: 3px 9px;
+	color: #929294 ;
+	font-size: 13px;
+	font-weight: 400;
+
+	letter-spacing: -.5px;
+}
+
+#footer .txt-wrap a:before {
+	content: '';
+	display: block;
+	position: absolute;
+
+	top: 7px;
+	left: 0;
+
+
+	width: 1px;
+	height: 10px;
+	background-color: #d7dfe7;
+}
+/*
+#footer .txt-wrap a:nth-child(1):before,
+#footer .txt-wrap a:nth-child(4):before {
+	content: none;
+}*/
+
+#footer .txt-wrap .link a:first-child:before{
+	content: none;
+}
+
+
+
+#footer h1 {
+	text-align: center;
+	/*background-color: #d7dfe7;*/
+
+}
+
+#footer h1 img{
+	width: 74px;
+
+}
+
+

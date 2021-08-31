@@ -1,0 +1,38 @@
+/* root 어디에서든 다 사용가능 */
+:root {
+	--kang_he_won:  #ff7f50;
+	--purple: #9147ff;
+	--font-size-40:  40px;
+}
+
+/* 앞에것이 변수 뒤에가 데이터 */
+
+h1 {
+	background-color: var(--kang_he_won);
+	font-size: var(--font-size-40);
+	color: var(--purple);
+}
+
+/* 일괄적인 작업을 할때 변수가 편하다, 그리고 직관적으로 활용할수 있다. 단점은 익스플로러에서 제약 */
+
+
+
+/* id로 지정해서 intro에서만 적용 ( root와 다르다.) */
+
+
+#intro {
+	--font-color: blue;
+	--font-size:  50px;
+}
+
+
+#intro p {
+	font-size: var(--font-size);
+	color: var(--font-color);
+}
+
+
+#footer p {
+	font-size: var(--font-size);
+	color: var(--font-color);
+}

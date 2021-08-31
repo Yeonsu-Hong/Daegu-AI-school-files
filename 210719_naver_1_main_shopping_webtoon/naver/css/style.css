@@ -1,0 +1,2215 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+img {
+	vertical-align: middle;
+}
+
+button {
+	border: none;
+}
+
+input, textarea {
+	outline: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+.container {
+	width: 1130px;
+	margin: 0 auto;
+}
+
+
+
+#main-header {
+	position: relative;
+	background-color: #ffffff;
+}
+
+#main-header .search_area {
+		position: relative;
+		height: 160px;
+		background-color: #ffffff;
+
+		border-bottom: 1px solid #e4e8eb;
+
+
+	display: flex;
+	/*flex-direction: row;*/
+	/*flex-wrap: nowrap;*/
+	justify-content: center;
+	align-items: center;
+	/*align-content: stretch;*/
+}
+
+
+#main-header .search_wrap {
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	/*align-content: stretch;*/
+
+
+
+	position: relative;
+	width: 582px;
+	height: 52px;
+	border: solid 2px #19ce60;
+}
+
+#main-header .search_wrap input {
+	width: calc(100% - 52px);
+	height: 100%;
+	padding: 13px 15px;
+	/*background-color: yellow;*/
+
+	font-size: 22px;
+	border: none;
+}
+
+#main-header .search_wrap input:focus {
+	outline: none;
+}
+
+
+
+#main-header .search_wrap button {
+	width: 52px;
+	height: 100%;
+	background-color: #19ce60;
+}
+
+
+/*textarea:focus {
+	outline: none;
+}*/
+
+#main-header #navbar {
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+#main-header #navbar ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#main-header #navbar ul li a {
+	color: #03c75a;
+	font-size: 15px;
+	font-weight: 700 ;
+}
+
+
+main {
+	overflow: hidden;
+}
+
+main #main_left {
+	float: left;
+	width: 750px;
+
+	/*background-color: yellow;*/
+}
+
+main #main_right {
+float: right;
+width: 350px;
+/*height: 2000px;*/
+/*background-color: yellow;*/
+}
+
+
+main #banner_wrap {
+	width: 750px;
+	height: 135px;
+	background-color: #000000;
+
+	margin-bottom: 12px;
+}
+
+main #news_wrap .news_header{
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	/*align-content: stretch;*/
+
+	padding: 22px 0 16px 0;
+}
+
+main #news_wrap .news_header h2 {
+	font-size: 14px;
+	font-weight: 700px;
+}
+
+main #news_wrap .news_header .news_btn_wrap {
+	width: 60px;
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	/*align-content: stretch;*/
+
+}
+
+main #news_wrap .news_header .news_btn_wrap button {
+	width: 15px;
+	height: 15px;
+	background-color: blue;
+}
+
+main #news_wrap .news_lists {
+	overflow: hidden;
+	border: solid 1px #dae1e6;
+}
+
+main #news_wrap .news_lists .news_list {
+	position: relative;
+	float: left;
+	width: 16.66%;
+	height: 65px;
+	background-color: #ffffff;
+
+	border-bottom: solid 1px #e4e8eb;
+	border-right: solid 1px #e4e8eb;
+	text-align: center;
+}
+
+main #news_wrap .news_lists .news_list:nth-child(6n),{
+	border-right: none;
+}
+
+main #news_wrap .news_lists .news_list:nth-child(19),
+main #news_wrap .news_lists .news_list:nth-child(20),
+main #news_wrap .news_lists .news_list:nth-child(21),
+main #news_wrap .news_lists .news_list:nth-child(22),
+main #news_wrap .news_lists .news_list:nth-child(23),
+main #news_wrap .news_lists .news_list:nth-child(24) {
+	border-bottom: none;
+}
+
+
+main #news_wrap .news_lists .news_list img {
+	position: relative;
+
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+main #blog_wrap {
+	padding-top: 35px;
+}
+
+main #blog_wrap .blog_header{
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	/*align-content: stretch;*/
+
+	padding-bottom: 17px;
+}
+
+
+main #blog_wrap .blog_header .left_header {
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	/*justify-content: space-between;*/
+	align-items: center;
+	/*align-content: stretch;*/}
+
+main #blog_wrap .blog_header .left-header h3 {
+	font-size: 14px;
+	margin-right: 8px;
+}
+
+main #blog_wrap .blog_header .left-header span {
+	font-size: 12px;
+	color: grey;
+}
+
+main #blog_wrap .blog_header .right_header {
+	display: flex;
+	
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+main #blog_wrap .blog_header .right_header .span {
+	font-size: 12px;
+	color: grey;
+}
+
+main #blog_wrap .blog_header .right_header .count strong {
+	color: #000000;
+}
+main #blog_wrap .blog_nav ul {
+overflow: hidden;
+border: solid 1px #eae1e6;
+}
+/*높이값 인지시키기 위해서 overflow hidden을 넣어준다.*/
+
+main #blog_wrap .blog_nav ul li {
+	float: left;
+	width: 12.5%;
+	height: 49px;
+	border-right: solid 1 px #eae1e6;
+}
+
+main #blog_wrap .blog_nav ul li:last-child {
+	border-right: 0;
+}
+
+main #blog_wrap .blog_nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	line-height: 49px;
+	text-align: center;
+}
+main #blog_wrap .blog_list_wrap {
+	padding-top: 18px;
+	border-bottom: solid 1px #dae1e6;
+}
+
+
+main #blog_wrap .blog_list_wrap li {
+	margin-bottom: 18px;
+
+}
+
+main #blog_wrap .blog_list_wrap li a {
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	/*align-content: stretch;*/
+}
+
+main #blog_wrap .blog_list_wrap li img {
+	width: 170px;
+	height: 114px;
+	margin-right: 21px;
+	
+}
+
+main #blog_wrap .blog_list_wrap li .blog_list_info {
+	width: 559px;
+	padding-right: 47px;
+}
+
+main #blog_wrap .blog_list_wrap li .blog_list_info span {
+	font-size: 12px;
+	color: #35ae5e;
+}
+
+main #blog_wrap .blog_list_wrap li .blog_list_info h4 {
+	font-size: 13px;
+}
+
+main #blog_wrap .blog_list_wrap li .blog_list_info p {
+	font-size: 13px;
+}
+
+main #blog_wrap .blog_list_wrap li .blog_list_info .date-wrap span {
+	color: #505050;
+}
+
+
+main #blog_wrap .blog_media_wrap ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 18px 0;
+
+	border-bottom: solid 1px #dae1e6;
+}
+
+main #blog_wrap .blog_media_wrap ul .blog_media_info {
+	padding-top: 12px;
+}
+
+main #blog_wrap .blog_media_wrap ul .blog_media_info h4 {
+	font-size: 13px;
+}
+
+main #blog_wrap .blog_media_wrap ul .blog_media_info span {
+	font-size: 12px;
+}
+
+#main_right #account {
+	width: 100%;
+	border:  solid 1px #dae1e6;
+	padding: 16px 16px 12px 16px;
+	margin-bottom: 12px;
+}
+
+
+#main_right #account p {
+	font-size: 12px;
+	padding-left: 3px;
+	margin-bottom: 11px;
+}
+#main_right #account a {
+	display: block;
+	width: 100%;
+	background-color: #19ce60;
+	border-radius: 2px;
+
+	padding: 15px 0;
+	margin-bottom: 14px;
+
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* a tag는 inline 요소인데 display를 통하여 block으로 바꿔준다. */
+
+#main_right #account .account_sub{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
+	padding: 0 8px;
+}
+
+#main_right #account .account_sub span {
+	font-size: 12px;
+}
+
+#main_right #banner {
+	width: 348px;
+	height: 198px;
+	background-color: #000000;
+
+	margin-bottom: 20px;
+}
+
+
+#main_right #shop_wrap .shop_title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 12px 0;
+}
+
+#main_right #shop_wrap .shop_title h3,
+#main_right #shop_wrap .shop_title h4 {
+	font-size: 13px;
+}
+
+#main_right #shop_wrap .shop_title h4 {
+	margin-left: 15px;
+}
+
+#main_right #shop_wrap .shop_title .right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+#main_right #shop_wrap .shop_content {
+	border: solid 1px #e4e8eb;
+	padding: 0 0px 22px;
+}
+
+#main_right #shop_wrap .shop_content .shop_goods {
+	padding: 55px 8px;
+}
+
+
+
+#main_right #shop_wrap .shop_content .commerce-lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 12px 4px;
+	background-color: #f7f9fa;
+	border-bottom: solid 1px #dae1e6;
+}
+
+#main_right #shop_wrap .shop_content .commerce-lists li {
+	font-size: 12px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#main_right #shop_wrap .shop_content .commerce-lists li:nth-child(1),
+#main_right #shop_wrap .shop_content .commerce-lists li:nth-child(8) {
+	margin-left: 0;
+}
+
+
+#main_right #shop_wrap .product-lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#main_right #shop_wrap .product-lists li {
+	margin-bottom: 10px;
+}
+
+#main_right #shop_wrap .product-lists .product-info {
+	text-align: center;
+}
+
+#main_right #shop_wrap .product-lists h3, 
+#main_right #shop_wrap .product-lists span {
+	font-size: 12px;
+}
+
+
+#main_footer {
+	background-color: #fafbfc;
+	border-top:solid 1px #e4e8eb;
+	padding-bottom: 92px;
+}
+
+#main-footer .news_lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
+	padding: 24px 0;
+
+}
+
+
+#main-footer .news_lists li {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#main-footer .news_lists li img {
+	margin-right: 15px;
+
+}
+
+#main-footer .news_lists li .news_info {
+	width: 172px;
+}
+
+#main-footer .news_lists li .news_info span,
+#main-footer .news_lists li .news_info h3,
+#main-footer .news_lists li .news_info p {
+	font-size: 13px;
+}
+
+#main-footer .news_lists li .news_info span {
+	color: #58c464;
+}
+
+#main-footer .corp_lists {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: solid 1px #e4e8eb;
+}
+
+#main-footer .corp_lists li {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* 맨앞 짝대기 없애기 */
+
+#main-footer .corp_lists li:first-child:before {
+	content: initial;
+}
+
+#main-footer .corp_lists li:before {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 11px;
+	background-color: #e4e8eb;
+	margin: 0 8px;
+
+	vertical-align: -1px;
+}
+/* 짝대기 밑으로 내려감 */
+#main-footer .corp_lists li a {
+	font-size: 12px;
+}
+
+
+
+
+
+	/*쇼핑 페이지*/
+
+	
+#shop-body {
+	background-color: #e9ecef
+}
+
+
+
+.shop-container {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.shop-border {
+	border: solid 1px #ced2d7;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+#shop-header #shop-header-top {
+	width: 100%;
+	height: 36px;
+	background-color: #03c75a;
+	border-bottom: solid 1px #e8e8e8;
+}
+
+#shop-header #shop-header-middle {
+	width: 100%;
+	height: 66px;
+	background-color: #03c75a;
+}
+
+#shop-header nav {
+	width: 100%;
+	background-color: #ffffff;
+	border-top: solid 1px #e8e8e8;
+	border-bottom: solid 1px #e8e8e8;
+}
+
+
+#shop-header nav ul {
+	display: flex;
+
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 13px 0 8px 0;
+}
+
+#shop-header nav ul li {
+	margin-right: 16px;
+}
+
+#shop-main .list-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+#shop-main .list-item {
+	position: relative;
+	width: 308px;
+	height: 496px;
+	/*background-color: #ffffff;*/
+
+	margin-bottom: 20px;
+}
+
+#shop-main .list-item.banner img {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#shop-main .list-item .category-wrap {
+	overflow-hidden
+}
+
+#shop-main .list-item .category-wrap .category-left {
+	float: left;
+	width: 124px;
+	height: 100%;
+	background-color: #333949;
+}
+
+#shop-main .list-item .category-wrap .category-left h3 {
+	padding: 14px 0 14px 13px;
+	border-bottom: 1px solid #2b313f;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.46);
+}
+
+#shop-main .list-item .category-wrap .category-left ul {
+
+}
+
+#shop-main .list-item .category-wrap .category-left li {
+
+}
+
+#shop-main .list-item .category-wrap .category-left a {
+
+	display: block;
+
+	padding: 7px 8px ;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.46);
+	font-weight: 700;
+}
+
+
+
+#shop-main .list-item .category-wrap .category-right {
+	float: right;
+	width: 182px;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+#shop-main .list-item .category-wrap .category-right-top {
+	width: 100%;
+	height: 306px;
+	border-bottom: solid 1px #e7e7e7;
+
+	text-align: center;
+}
+
+#shop-main .list-item .category-wrap .category-right-top .category-info {
+	padding: 20px 0;
+	/*text-align: center;*/
+}
+
+#shop-main .list-item .category-wrap .category-right-top .headline,
+#shop-main .list-item .category-wrap .category-right-bottom .headline {
+	display: inline-block;
+
+	font-size: 12px;
+	border: solid 1px #00ab33;
+	color: #00ab33;
+
+	margin-bottom: 7px;
+}
+
+#shop-main .list-item .category-wrap .category-right-top .category-info h3 {
+	font-size: 18px;
+}
+
+#shop-main .list-item .category-wrap .category-right-top .category-info .price {
+	font-size: 16px;
+	color: skyblue;
+}
+
+#shop-main .list-item .category-wrap .category-right-top {
+	/*text-align: center;*/
+}
+
+#shop-main .list-item .category-wrap .category-right-bottom  {
+	padding-top: 20px;
+
+	text-align: center;
+}
+
+#shop-main .list-item .category-wrap .category-right-bottom .tag-wrap .tag {
+	display: inline-block;
+
+	width: auto;
+	max-width: 75px;
+	height: 24px;
+	background-color: #e8eef4;
+	
+	margin: 6px 1px 0 1px;
+	padding: 0 5px;
+
+	line-height: 26px;
+	font-size: 11px;
+	color: #666;
+	vertical-align: top;
+}
+
+#shop-main .list-item .list-half {
+	width: 100%;
+	height: 240px;
+	background-color: #ffffff;
+}
+
+#shop-main .list-item .list-half.list-half-top {
+	position: absolute;
+	left: 0;
+	top: 0;	
+}
+
+#shop-main .list-item .list-half.list-half-bottom {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+#shop-main .list-item .list-half .list-half-header {
+	position: relative;
+
+	width: 100%;
+	height: 62px;
+	background-color: #ffffff;
+	border-bottom: solid 1px #e7e7e7e7;
+
+	text-align: center;
+
+	padding-top: 10px;
+}
+
+#shop-main .list-item .list-half .list-half-header .headline {
+	display: inline-block;
+	border:  solid 1px #000000;
+	padding: 2px 4px;
+}
+
+#shop-main .list-item .list-half .list-half-header h3 
+{ font-size: 14px;
+
+}
+
+
+
+#shop-main .list-item .list-half .list-half-header .half-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#shop-main .list-item .list-half .list-half-header.list-half-bg {
+	background-color: green;
+	border-bottom: solid 1px #ffffff;
+	padding-top: 0;
+}
+
+#shop-main .list-item .list-half .list-half-header.list-half-bg .shop-title-border {
+	position: relative;
+	display: inline-block;
+	border: solid 1px #ffffff;
+	padding: 2px 4px;
+	margin-bottom: 5px;
+
+	color: #ffffff;
+
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#shop-main .list-item .list-half .content-lists {
+	overflow: hidden;
+	height: 177px;
+}
+
+
+
+#shop-main .list-item .list-half .content-lists.content-lists-3 li {
+	float: left;
+	width: 33.33%;
+	height: 177px;
+	border-right: solid 1px #f0f0f0;
+	text-align: center;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-3 li:last-child {
+	border-right: none;
+
+}
+
+
+
+
+
+
+#shop-main .list-item .list-half .list-half-header.list-half-bg {
+	background-color: green;
+}
+
+#shop-main .list-item .list-half .list-half-header.list-half-bg .shop-title-border {
+	position: relative;
+	display: inline-block;
+	border:  solid 1px #ffffff;
+
+	color: #ffffff;
+	/*font-size: 14px;*/
+
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-3 li img {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-3 li h3 {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-3 li span {
+	font-size: 12px;
+}
+
+
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	padding-top: 11px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li {
+	width: 130px;
+	height: 150px;
+	margin-right: 8px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li:last-child {
+	margin-right: 0;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li .content-image-wrap {
+	position: relative;
+	width: 130px;
+	height: 90px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li .content-image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li .content-image-wrap .discount {
+	position: absolute;
+	display: block;
+	width: 42px;
+	height: 42px;
+	background-color: orange;
+	border-radius: 50%;
+
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 42px;
+    text-align: center;
+
+	top: 6px;
+	right: 5px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li h3 {
+	font-size: 13px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li .price {
+	color: #62a7ee;
+	font-size: 12px;
+}
+
+#shop-main .list-item .list-half .content-lists.content-lists-2 li .price em {
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#shop-main .list-item .list-row-3 {
+	background-color: #ffffff;
+	border-top: none;
+}
+
+#shop-main .list-item .list-row-3 li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	border-bottom: solid 1px #f0f0f0;
+	padding: 14px 19px 11px 19px;
+}
+
+#shop-main .list-item .list-row-3 li:last-child {
+	border-bottom: none;
+}
+
+#shop-main .list-item .list-row-3 li .list-image-wrap {
+	width: 90px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+#shop-main .list-item .list-row-3 li .list-image-wrap img {
+	width: 100%;
+	height: 100%;
+}
+
+#shop-main .list-item .list-row-3 li .list-row-info span {
+	font-size: 12px;
+}
+
+#shop-main .list-item .list-row-3 li .list-row-info h3 {
+	font-size: 13px;
+}
+
+#shop-main .brand-wrap {
+	background-color: #ffffff;
+}
+
+#shop-main .brand-wrap .brand-lists{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 18px;
+}
+
+#shop-main .brand-wrap .brand-lists li {
+	width: 64px;
+	height: 64px;
+}
+
+#shop-main .brand-wrap .brand-lists li img {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+#shop-footer {
+	padding-bottom: 180px;
+	text-align: center;
+}
+
+#shop-footer .policy-wrap {
+	border-top: solid 2px #5d5d5d;
+	padding-top: 27px;
+	margin-bottom: 11px;
+}
+
+#shop-footer .policy-wrap span {
+	/*background-color: #d7d7d7;*/
+	font-size: 12px;
+}
+
+#shop-footer .policy-wrap span:first-child:before {
+	content: initial;
+}
+
+#shop-footer .policy-wrap span:before {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 11px;
+	margin: 0 8px;
+	background-color: #d7d7d7;
+	vertical-align: -1;
+}
+
+#shop-footer p {
+	font-size: 12px;
+	color: #888;
+	margin-bottom: 11px;
+}
+
+
+
+/*7/23 웹툰 페이지*/
+
+.webtoon-border {
+	border: solid 1px #ced2d7;
+}
+
+
+
+.webtoon-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#webtoon-header {
+	background-color: #ffffff;
+}
+
+#webtoon-header .webtoon-header-top {
+
+	background-color: #ffffff;
+	border-bottom: solid 1px #f2f2f2;
+
+	padding: 10px 0 8px 0;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-left {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	width: 550px;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-left h2 {
+	font-size: 20px;
+}
+
+/*만화 | 웹소설 */
+#webtoon-header .webtoon-header-top .webtoon-header-left .bar {
+	width: 1px;
+	height: 13px;
+	background-color: #d2d2d2;
+
+	margin-left: 8px;
+	margin-right: 10px;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-left h3 {
+	margin-right: 30px;
+	font-size: 16px;
+	color: grey;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-left h3 a {
+	color: grey;
+}
+
+/* 검색 영역 */
+#webtoon-header .webtoon-header-top .webtoon-header-input-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+
+	width: 315px;
+	height: 37px;
+	border: solid 1px #e5e5e5;	
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-input-wrap input {
+	width: calc(100% - 35px);
+	height: 100%;
+	border: none;
+	/*background-color: yellow;*/
+
+	padding: 0 10px;
+	/*조금 띄워져서 검색이 된다*/
+}
+
+/* 검색창에 클릭했을때 outline 생기는 것 제거 */
+#webtoon-header .webtoon-header-top .webtoon-header-input-wrap input:focus {
+	outline: none;
+}
+
+
+/* naver 만화 검색 버튼 */
+#webtoon-header .webtoon-header-top .webtoon-header-input-wrap .btn-search {
+	width: 35px;
+	height: 100%;
+	background-color: #00d564;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-right .btn-login {
+	border: solid 1px #000000;
+	
+	padding: 2px 4px;
+	margin-right: 20px;
+	
+	font-size: 12px;
+}
+
+#webtoon-header .webtoon-header-top .webtoon-header-right .btn-menu {
+	width: 16px;
+	height: 16px;
+	background-color: blue;
+}
+
+ /* top을 벗어난 영역 */
+#webtoon-header .webtoon-header-nav {
+	border-bottom: solid 1px #e5e5e5;
+}
+
+#webtoon-header .webtoon-header-nav .webtoon-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#webtoon-header .webtoon-header-nav nav {
+	
+}
+
+#webtoon-header .webtoon-header-nav nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+}
+
+#webtoon-header .webtoon-header-nav nav ul li {
+	width: auto;
+	height: 40px;
+}
+
+
+#webtoon-header .webtoon-header-nav nav ul li.on a {
+	background-color: #00d564;
+	color: #ffffff;
+}
+
+#webtoon-header .webtoon-header-nav nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 15px;
+
+	line-height: 40px;
+
+	font-size: 14px;
+}
+
+					/* 오른쪽 부분 */
+#webtoon-header .webtoon-header-nav .webtoon-header-link-wrap {
+
+}
+
+
+#webtoon-header .webtoon-header-nav .webtoon-header-link-wrap .icon-ex-mark{
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	background-color: #000000;
+
+	vertical-align: middle;
+}
+
+#webtoon-header .webtoon-header-nav .webtoon-header-link-wrap a {
+	vertical-align: middle;
+	font-size: 12px;
+	color: #606060;
+}
+
+#webtoon-header .webtoon-header-nav .webtoon-header-link-wrap a:hover {
+	text-decoration: underline;
+}
+
+#webtoon-main {
+	padding-bottom: 100px;
+}
+
+/* 중간 nav 진행 */
+#webtoon-main .webtoon-container {
+	overflow: hidden;
+}
+
+#webtoon-main .webtoon-main-left {
+	float: left;
+
+
+	width: 694px;
+	/*height: 2000px;*/
+	/*background-color: yellow;*/
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel {
+	overflow: hidden;
+	width: 694px;
+	height: 252px;
+	background-color: #ffffff;
+
+	margin-bottom: 20px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel .webtoon-carousel-left {
+	float: left;
+	width: 112px;
+	padding: 20px 5px 0 15px
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left h2 {
+	font-size: 25px
+	margin-bottom: 13px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left span {
+	color: #00d564;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left p {
+	font-size: 12px;
+	color: #808285;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left ul {
+	margin-top: 48px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left li {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left li.on a {
+	color: #00d564;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-left li:last-child {
+	margin-bottom: 0;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel .webtoon-carousel-right {
+	float: right;
+	width: calc(100% - 112px);
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner {
+	width: 582px;
+	height: 195px;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav {
+	position: relative;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	width: 540px;
+	margin: 0 auto;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav ul li{
+	width: 135px;
+	height: 57px;
+	border-left: solid 1px #e5e5e5;
+	border-right: solid 1px #e5e5e5;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav ul li:fist-child {
+	border-left: none;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav ul li:last-child {
+	border-right: none;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav ul li img{
+	width: 100%;
+	height: 100%;
+}
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav .btn {
+	position: absolute;
+	width: 20px;
+	height: 57px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav .btn.btn-prev{
+	left: 0;
+	top: 0;
+	background-color: pink;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-carousel-banner-nav .btn.btn-next{
+	right: 0;
+	top: 0;	
+	background-color: blue;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-banner {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content {
+	background-color: #ffffff;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header {
+	position: relative;
+	border-bottom: solid 1px #e5e5e5;
+	padding: 26px 0 0;
+}
+/*padding 3 글씨는 상 /좌우/ 하 로 잡힌다. */
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header .webtoon-content-header-recommend {
+	padding-bottom: 0;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header h2 {
+	font-size: 20px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header h2 span {
+	color: #00d564;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header nav {
+	margin-top: 20px;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header li {
+	width: auto;
+	height: 22px;
+	margin-right: 15px;
+
+	
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header li.on {
+	border-bottom: solid 2px #00d564;
+	margin-bottom: -1px;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-header li a {
+	display: block;
+	padding-bottom: 6px;
+
+	font-size: 13px;
+	color: #737373;
+}
+
+
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-body nav {
+	padding: 12px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-body nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-body nav ul li {
+	margin-right: 8px;
+	font-size: 12px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content .webtoon-content-body nav ul li a {
+	color: grey;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-3 .webtoon-content-col-type-1 {
+	width: 210px;
+	height: 196px;
+	font-size: 12px;
+} 
+/* 자식들에게 font-size 유전자가 전달이 된다. */
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-1 img {
+	margin-bottom: 10px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-1 .webtoon-content-col-3-info h4 {
+	margin-bottom: 5px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-1 .webtoon-content-col-3-info p {
+	margin-bottom: 5px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-1 .webtoon-content-col-3-info span {
+	color: grey;
+}
+
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-2 {
+	width: 210px;
+	font-size: 12px;
+	margin-top: 14px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-2 h3 {
+	font-size: 14px;
+	color: grey;
+	margin-bottom: 10px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-2 .webtoon-lists {
+	
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-2 .webtoon-lists li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	height: 90px;
+	margin-bottom: 20px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-type-2 .webtoon-lists li img {
+	margin-right: 10px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-info-right .webtoon-content-rating {
+	margin-top: 15px;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-info-right .webtoon-content-rating .star {
+	display: inline-block;
+
+	width: 60px;
+	height: 14px;
+	background-color: red;
+
+	vertical-align: middle;
+}
+
+#webtoon-main .webtoon-main-left .webtoon-content-col-info-right .webtoon-content-rating .score {
+	font-size: 12px;
+	color: grey;
+
+	vertical-align: middle;
+}
+
+
+
+/*7월 26일 right 작업 */
+
+
+
+#webtoon-main .webtoon-main-right {
+	float: right;
+
+	width: 240px;
+	/*height: 2000px;*/
+	/*background-color: blue;*/
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap {
+	width: 100%;
+	height: 252px;
+	background-color: #f9f9fc;
+
+	padding: 20px 18px;
+	margin-bottom: 20px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap h3 {
+	font-size: 18px;
+	margin-bottom: 11px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap h3 span {
+	color: #00d564;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap img{
+	width: 100%;
+	height: 110px;
+
+	margin-bottom: 18px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info {
+	
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info .webtoon-title-wrap {
+	display: flex;
+	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 5px;
+	
+}
+
+
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info .webtoon-title-wrap h4 {
+	font-size: 16px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info a:hover {
+	text-decoration: underline;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info .webtoon-title-wrap a {
+	font-size: 12px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info p {
+	font-size: 12px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-challenge-wrap .webtoon-info p a {
+	color: grey;
+}
+
+#webtoon-main. .webtoon-main-right .webtoon-banner-type-1,
+#webtoon-main. .webtoon-main-right .webtoon-banner-type-2 {
+	margin-bottom: 8px;
+
+}
+
+#webtoon-main .webtoon-main-right .webtoon-banner-type-1 {
+	height: 240px;
+	background-color: yellow;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-banner-type-2 {
+	height: 86px;
+	background-color: pink;
+}
+
+
+#webtoon-main .webtoon-main-right .webtoon-popular {
+	background-color: #ffffff;
+	margin-bottom: 8px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+	padding: 9px 12px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-header h2 {
+	font-size: 14px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-top: solid 1px #e1e1e1;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-tabs .tab {
+	width: 50%;
+	height: 30px;
+	border-bottom: solid 1px #e1e1e1;
+
+	text-align: center;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-tabs .tab:first-child {
+	border-right: solid 1px #e1e1e1;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-tabs .tab.active {
+	border-bottom: solid 1px #ffffff;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-tabs .tab span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+
+	font-size: 12px;
+}	
+
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking {
+	width: 100%;
+	/*height: 210px;*/
+	background-color: #ffffff;
+
+	padding: 15px 0 7px;
+
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking ol {
+	list-style: decimal;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking li {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 7px;
+	padding: 0 13px;
+
+	font-size: 12px;
+}
+
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-content a {
+	display: inline-block;
+	overflow: hidden;
+	width: 140px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-content .rank {
+	margin-right: 5px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
+	width: 30px;
+	height: 12px;
+
+	top: -3px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-box .status {
+
+
+	width: 12px;
+	height: 12px;
+}
+
+
+
+
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-box .status.status-stay {
+	background-color: black;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-box .status.status-up {
+	background-color: red;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-box .status.status-down {
+	background-color: blue;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank-box .number {
+	
+}
+
+
+/* 썸네일 이미지가 포함된 랭킹 */
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .rank .rank-custom {
+	position: relative;
+	top: -10px;
+}
+
+
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .image-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	width: 140px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .image-wrap img {
+	width: 30px;
+	height: 33px;
+	margin-right: 5px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .image-wrap .webtoon-info {
+	/*background-color: yellow;*/
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .image-wrap .webtoon-info a {
+	width: 80px;
+}
+
+#webtoon-main .webtoon-main-right .webtoon-popular .webtoon-popular-ranking .image-wrap .webtoon-info .author {
+	display: block;
+}
+
+#webtoon-footer {
+	padding-bottom: 78px;
+}
+
+#webtoon-footer .webtoon-container {
+	border-top: solid 1px #e6e7e8;
+
+	padding-top: 40px;
+}
+
+#webtoon-footer .webtoon-footer-wrap {
+	display: flex;
+	
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-bottom: 32px;
+	
+}
+
+#webtoon-footer .webtoon-footer-wrap .webtoon-footer-left,
+#webtoon-footer .webtoon-footer-wrap .webtoon-footer-right{
+	width: 50%;
+	padding-left: 25px;
+}
+
+#webtoon-footer .webtoon-footer-wrap .webtoon-footer-right {
+	border-right: solid 1px grey;
+}
+
+
+
+#webtoon-footer .webtoon-footer-wrap ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-bottom: 8px;
+}	
+
+#webtoon-footer .webtoon-footer-wrap ul li {
+	/*margin-right: 5px;*/
+}
+
+#webtoon-footer .webtoon-footer-wrap ul li:first-child:before {
+	content: initial;
+}
+
+#webtoon-footer .webtoon-footer-wrap ul li:before {
+	display: inline-block;
+	content: "";
+	width: 1px;
+	height: 11px;
+	background-color: #d9d9d9;
+
+	vertical-align: -1px;
+	margin: 0 8px;
+}
+
+#webtoon-footer .webtoon-footer-wrap ul li a  {
+
+}
+
+
+#webtoon-footer .webtoon-footer-wrap span {
+	text-transform: uppercase;
+}
+
+#webtoon-footer .webtoon-footer-paragraph {
+	padding-left: 25px;
+}
+
+/* 웹툰 상세 페이지 */
+.webtoon-detail {
+	padding-top: 0;
+}
+
+
+
+.webtoon-detail .nav-1 {
+	background-color: #fafafa;
+	border-bottom: solid 1px #ededed;
+}
+
+.webtoon-detail .nav-1 ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;	
+}
+
+
+.webtoon-detail .nav-1 ul li {
+	width: auto;
+	height: 36px;
+	margin-right: 28px;
+}
+
+.webtoon-detail .nav-1 ul li:last-child {
+	margin-right: 0px;
+}
+
+
+
+.webtoon-detail .nav-1 ul li a {
+	width: 100%;
+	height: 100%;
+
+	line-height: 36px;
+	text-align: center;
+
+	font-size: 12px;
+	color: #434343;
+}
+
+.webtoon-detail .nav-2 {
+	padding-top: 20px;
+
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.webtoon-detail .nav-2 ul {
+	display: flex;
+	
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+
+.webtoon-detail .nav-2 ul li {
+	margin-right: 14px;
+	padding-bottom: 5px;
+	border-bottom: solid 2px transparent;
+
+}
+
+.webtoon-detail .nav-2 ul li.on {
+	border-color: #00d564;
+	/*border-bottom: solid 2px #00d564;*/
+	margin-bottom: -1px;
+	font-weight: 700;
+}
+
+.webtoon-detail .nav-2 ul li:last-child {
+	margin-right: 0;
+}
+
+.webtoon-detail .nav-2 ul li a {
+	font-size: 13px;
+}
+
+.webtoon-detail #webtoon-this-month {
+	padding: 20px 0;
+}
+
+.webtoon-detail #webtoon-this-month h2 {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list {
+	width: 218px;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list .this-image-wrap {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	margin-bottom: 5px;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list .this-image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list .this-image-wrap .new-mark {
+	position: absolute;
+	width: 30px;
+	background-color: #00c85e;
+	color: #ffffff;
+}
+
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list h3 {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list .author {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.webtoon-detail #webtoon-this-month .webtoon-this-list p {
+	font-size: 14px;
+}
+
+
+.webtoon-detail #webtoon-total-day {
+	padding-top: 20px;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-total-title-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-bottom: 8px;
+	border-bottom: solid 1px #eaeaea;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-total-title-wrap h2{
+	font-size: 16px;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-total-title-wrap ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-total-title-wrap li {
+	margin-right: 10px;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-total-title-wrap li:last-child {
+	margin-right: 0;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-total-title-wrap a {
+	font-size: 12px;
+}
+
+
+
+.webtoon-detail #webtoon-total-day .webtoon-day-lists {
+	display: flex;
+	flex-direction: row;
+	border-bottom: solid 1px #f4f4f4;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list {
+	width: 14.2855%;
+	text-align: center;
+	border-right: solid 1px #f4f4f4;
+
+	padding: 0 8px;
+}
+
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list.active {
+	background-color: #3a3a3a;
+	border-color: #3a3a3a;
+	color: #fbcb00;
+}
+
+
+
+
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list:last-child {
+	border-right: none;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list span {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list .webtoon-list {
+	margin-bottom: 10px;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list .webtoon-list img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.webtoon-detail #webtoon-total-day .webtoon-day-list span,
+.webtoon-detail #webtoon-total-day .webtoon-day-list .webtoon-list h3 {
+	font-size: 14px;
+}
+
+
+/*  7/27 네이버 블로그 */
+.blog-container{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+#blog-header .blog-header-top {
+	background-color: #00c73c;
+	border-bottom: 1px solid #51b036;
+}
+
+#blog-header .blog-header-top .blog-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+
+
+#blog-header .blog-header-top .blog-header-left {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#blog-header .blog-header-top .blog-header-left h2 {
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+#blog-header .blog-header-top .blog-header-left h2 a {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+
+#blog-header .blog-header-top .blog-header-input-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+
+#blog-header .blog-header-top .blog-search-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	width: 325px;
+	height: 40px;
+	background-color: #ffffff;
+
+	margin-right: 5px;
+}
+
+#blog-header .blog-header-top .blog-search-wrap input {
+	width: calc(100% - 40px);
+	height: 40px;
+	background-color: #ffffff;
+	border: solid 1px #4da733;
+
+	padding: 0 15px;
+}
+
+#blog-header .blog-header-top .blog-search-wrap input:focus {
+	outline: none;
+}
+
+#blog-header .blog-header-top .blog-search-wrap .btn-search {
+	width: 40px;
+	height: 40px;
+	background-color: #28a93a;
+	border: solid 1px #239e36;
+}
+
+#blog-header .blog-header-top .btn-total-search {
+	width: auto;
+	height: 40px;
+	background-color: #28a93a;
+	border: solid 1px #239e36;
+
+	padding: 0 5px;
+
+	line-height: 40px;
+	color: #ffffff;
+}
+
+
+
+
+
+

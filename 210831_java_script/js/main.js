@@ -1,12 +1,18 @@
-// 8/31 화요일 
+// 8/31 화요일 (9/2 추가 update)
 
 
 
 // 자바스크립트 시작
 
 
+//변수에 대한 개념
+/*변수란 프로그램을 실행하는 동안 값이 여러번 달라질 수 있는 데이터를 가리킨다.
+반면 값을 할번 지정하면 바뀌지 않는 데이터를 상수(constant)라고 한다.
+
+
+
 // comic 박스를 생성한 상태
-// 변수 선언 (변수를 만든 상태)
+// 변수 선언 (변수를 만든 상태; 저장할 컴퓨터 메모리 공간에 문패를 붙이는 것과 같다.)
 
 
 // var comic;
@@ -85,9 +91,6 @@ console.log(house);
 
 
 
-
-
-
 // 변수 작성방법
 
 // 캐멀 케이스
@@ -126,7 +129,7 @@ console.log(house);
 /*
 
 
-//  데이터 타입 (데이터의 종류들)
+//  데이터 타입 (데이터의 종류들) 책 p.468
 
 
 // 문자열 (String)
@@ -153,7 +156,7 @@ var msg5 = 'She\'s a girl';
 console.log(msg4);
 console.log(msg5);
 
-//  결과 값은 동일
+//  결과 값은 동일 축약어로 나옴
 
 */
 
@@ -270,7 +273,7 @@ var num20 = 20;
 
 // 자기 자신을 업데이트
 
-num20 += 10; //위와 같은 뜻이다.
+num20 += 10; //위와 같은 뜻이다. ( y = y + x)
 
 console.log(num20); // 결과 값 30
 
@@ -293,23 +296,25 @@ console.log(a <= b);
 console.log(a == b);
 console.log(a === b);
 
-console.log(a != b);
+console.log(a != b); a와 b가 다른지..
 console.log(a !== b);
 
 // != 값이 다른지를 검사하는 것!
 */
 /*
+
+// 숫자
 var num10 = 10;
 var num20 = 20;
 
-
+// 문자
 var str10 = "10";
 var str20 = "20";
 
-console.log(num10 == str10); //
-console.log(num10 === str10); // 데이타 타입까지 같은지 따지는 것 등호 3개
+console.log(num10 == str10); // 출력 결과물이 같으므로 true
+console.log(num10 === str10); // 데이타 타입까지 같은지 따지는 것 등호 3개 (데이터 타입이 다르므로 false)
 
-console.log(num20 != str20);
+console.log(num20 != str20);  // 데이터 타입을 떠나서 내용물이 같기 때문에 false (같지 않아야 true)
 console.log(num20 !== str20); // 두개의 데이터 타입이 달라서 true로 나타난다.
 */
 
@@ -336,20 +341,24 @@ console.log(10 === 10 || 20 === 30 );
 */
 
 
-// 9/1 수요일
+
+
+ // 9/1 수요일 (수정 : 9/2 목요일)
 
 
 //  null, undefined 둘다 값이 없는 상태!!
-//  null : 변수 초기화로 명시적으로 빈 값을 변수 안에 할당한 상태
+//  null : 변수 초기화로 명시적으로 빈 값을 변수 안에 할당한 상태 ( 변수로 할당된 값이 유효하지 않다는것 )
 
 var n = null;
 
-// undefined 변수를 선언만 한 상태
+// undefined 변수를 선언만 한 상태 (값은 할당 되지 않음!!)
 
 var u;
 
 console.log(n);
 console.log(u);
+
+
 
 // null과 undefined 차이점
 
@@ -357,8 +366,8 @@ console.log(u);
 console.log(typeof 10);
 console.log(typeof "Hello World")
 // number인지 string인지 나타난다.
-// null은 원래 원시타입인데 null이 object로 출력되는 이유는???
-// 태생적으로 가지고 있는 버그 때문에 그렇다.
+// null은 원래 원시타입(Primary type)인데 null이 참조타입(Object type)로 출력되는 이유는???
+// 태생적으로 가지고 있는 버그 때문에 그렇다. 버그는 수정할수 없다.
 
 // console.log(typeof null);
 // console.log(typeof undefined);
@@ -377,8 +386,8 @@ console.log(null === undefined);
 
 /*
 console.log(!true); 
-// 느낌표는 true의 반대를 의미
-console.log(!false);
+// 느낌표는 true의 반대를 의미 : false가 출력
+console.log(!false); // true 가 나온다.
 */
 
 console.log(!null); //true
@@ -390,14 +399,22 @@ console.log(!undefined); // true
 console.log(!!undefined); // false
 
 
-console.log(10 + null); // null -> 0
-console.log(10 + undefined); // NaN (Not a Number); 일종의 오류이다. 회사에서 면접을 볼때 물어보는 내용
+console.log(10 + null); // null -> 0 ( 0으로 바뀌게 된다. )
+console.log(10 + undefined); // NaN (Not a Number); 일종의 오류이다. 숫자가 아니다. <회사에서 면접을 볼때 물어보는 내용>
 
 
-//  책 (p.481 ~ 511 조건문 내용은 skip된 상태 )
+원시 타입의 내용 끝!!
+
+
+//  책 (p.481 ~ 511 조건문 내용은 skip된 상태 3. 제어문, 전역/지역 변수, 스코프, 호이스팅, 반복문 1편에서 나옴 )
+
+
 
 //  책 (p. 512 ~)
-// 참조 타입
+
+// 참조 타입 中 하나인 함수 
+
+
 // 함수 (function)
 
 /*
@@ -409,7 +426,7 @@ console.log(5 + 10);
 
 //  임의의 숫자 2개를 전달 받아서 덧셈을 하는 기능을 만들고 싶다.
 
-//  함수를 선언했다. 기능을 만들었는데 버튼을 인식 시킨 상태 x
+//  함수를 선언했다. 기능을 만들었는데 버튼을 인식 시킨 상태 x (스위치를 켜지 않았다.)
 
 /*
 
@@ -420,13 +437,10 @@ function sum() {
 	console.log(10 + 10);
 }
 
-
-
-
-
-
 //  함수를 키는 행위 = 함수 호출
 sum();
+
+
 // Hello와 20이 순차적으로 output
 sum();
 sum();
@@ -439,6 +453,13 @@ sum();
 */
 
 
+
+
+
+
+
+
+
 /*
 //  Parameter (매개변수), Argument (인수)
 // 매개변수 : num1, num2 
@@ -449,12 +470,15 @@ console.log(num1 + num2);
 
 }
 
-
 // 인수 : 호출시 전달되는 값
-
 sum(10 , 20);
 sum(100, 50);
 */
+// 30과 150이 출력 된다.
+
+
+
+
 
 
 //  매개 변수는 firstName과 lastName 이고 출력되는 Yeonsu와 Hong은 인수이다.
@@ -469,23 +493,28 @@ function fullName(firstName, lastName) {
 
 fullName("Yeonsu", "Hong");
 */
-
+/*
 
 function area(width, height) {
 	
-	console.log(width);
-	console.log(height);
 
 
 	var result = width * height;
 	console.log(result);
 
 }
-
 area(10); 
 
+// 원래 두개 넣어야 되는데 하나만 넣어서 NaN이 출력된다. 어떠한 연산작업은 끝났지만 숫자는 아니다 라는 의미
 
-// NaN이 출력된다. 어떠한 연산작업은 끝났지만 숫자는 아니다 라는 의미
+*/
+
+
+function area(width, height) {
+
+	console.log(width);
+	console.log(height);
+
 
 /*
 area(10,20);
@@ -502,8 +531,19 @@ area(10);
 
 // 매개 변수와 인수가 쌍을 이루고 있어야 한다.
 
-//  매개 변수안에 들어갈수 있는 것은 모든 type이 가능하다.
 
+
+
+
+
+
+
+
+
+
+
+
+//  매개 변수안에 들어갈수 있는 것은 모든 type이 가능하다.
 
 /*
 function test(a) {
@@ -524,6 +564,12 @@ test({name: "Yeonsu" }
 
 
 
+
+
+
+
+
+
 // return
 /*
 function sum(num1, num2) {
@@ -540,7 +586,7 @@ console.log(result);
 function area(hor, ver) {
 	return hor * ver;
 }
-
+//                가로 세로 높이
 var volume = area(10, 20) * 100; //200
 
 console.log(volume);
@@ -564,6 +610,10 @@ console.log(area(10,20)); //200이 출력된다.
 
 
 
+
+
+
+
 //  배열 (Array)
 
 /*
@@ -578,14 +628,14 @@ console.log(fruit);
 
 
 // 인덱스 (index)를 통해서 특정 data에 접근할 수 있다.
-console.log(fruit[0]);
-console.log(fruit[2]);
+console.log(fruit[0]); // 바나나
+console.log(fruit[2]); // 멜론
 
 
-fruit[2] = "수박";
+fruit[2] = "수박"; // 수박으로 변경
 console.log(fruit);
 
-// 출력되 length는 data의 갯수를 의미한다.
+// 출력되는 length는 data의 갯수를 의미한다.
 
 
 
@@ -602,10 +652,11 @@ var arr = [
 
 
 // 숫자에다가 갑자기 문자열을 넣는다거나 하면 활용할때 어려울수 있다.
+
 //  1. 배열안에 있는 데이터는 가능한한 동일한 데이터 타입이어야 한다.
 //  2. 가능한 동일한 성격을 가지고 있는 데이터를 넣어주는게 좋다.
 
-
+//예시 
 var num = [10,20,30, "Hello World"]
 // Hello world x
 var fruit = ["사과", "배", "바나나", "양상추"]
@@ -617,16 +668,14 @@ var fruit = ["사과", "배", "바나나", "양상추"]
 /*
 var score = [[10, 20, 30], [100, 200, 300]];
 
-
+// 직접 실습 해보기
 console.log(score);
 console.log(score[1]);
-console.log(score[1][2]);
+console.log(score[1][2]); // 두번째 300이라는 데이터만 가져오는 방법
 */
 
 
-
-
-
+58:05
 
 // 객체 (object)
 // 하나의 변수안에 전부 때려 놓고자 할때 사용한다.
@@ -668,9 +717,7 @@ student.gender = "female"
 
 console.log(student);
 */
-
-
-
+/*
 
 var student = {
 	name :"Yeri",
@@ -682,15 +729,144 @@ var student = {
 	test2: null,
 	test3: undefined,
 	test4: {color: "red"}
-};
+// 객체안에 또 다른 객체를 넣을수 있다.
+
+// 메서드 : 객체 안에서 만들어진 함수
+//  객체 밖에서 만들어진거는 그냥 함수
+
+	sum: function (num1, num2) {
+		return num1 + num2;
+	}
 
 
 
 
 
+var result = student.sum(10,20);
+
+console.log(result);
+
+
+// 형태가 비슷하다, 자바스크립트 안에 이미 있는 형태이고 콘솔객체안에 있는 로그라는 메서드를 사용한 것이다.
+student.sum(100, 200);
+console.log("Hello World");
+*/
+
+
+// 원시 타입과 참조 타입의 차이점 ★★★★★★★★ (중요!)
+
+// https://brunch.co.kr/@brunch92ny/10 (추가로 공부할 내용)
+
+//원시 타입의 특성
+
+/*
+var str1 = "Hello World";
+var str2 = str1;
 
 
 
+console.log(str1);
+console.log(str2);
+
+
+
+// str1 = "Nice";
+// 원본 데이터(str1)만 수정, 복사 데이터(str2)는 그대로임
+// 원시타입의 특성
+
+	str2 = "Nice";
+
+// 이렇게 하면 원본 타입은 그대로임
+*/
+
+
+
+
+/*
+
+// 참조 타입
+
+var obj1 = {name: "Yeonsu"}
+var obj2 = obj1;
+
+
+// obj1.name = "choi";
+
+// 결과는 obj2도 변경이 된다. 원시 타입과 다름
+
+obj2.name = "Hong";
+
+// 결과는 obj1도 변경이 된다.
+
+console.log(obj1);
+console.log(obj2);
+
+// 참조 타입은 지정한 주소를 가르키는 것이라 보면 된다.
+*/
+
+
+
+// 자바스크립트로 버튼 기능 만들기
+
+
+//yellow, green, pink #dc143c, rgba(123, 123, 123, .5);
+
+var colors = ['yellow', 'green', 'pink', '#dc143c','rgba(123, 123, 123, 0.5)'];
+
+// document는 HTML에 영향력을 발휘하는 객체다.
+// document.write()문 : 웹 브라우저 화면에 출력을 담당한다.
+
+var bg = document.getElementById('color-bg');
+var btn = document.getElementById('btn');
+
+
+//function()같이 함수명이 없는것을 익명함수라고 한다.
+// 콜백 함수 : 호출 기호 없이 특정 조건 하에 호출되는 함수
+
+// btn 자체도 객체이다
+btn.addEventListener('click', function() {
+	
+
+
+	// 0 ~ 4
+	var random = Math.floor(Math.random() * 5);
+	// console.log(random);
+	 // console.log(colors[random]);	
+
+
+	bg.style.backgroundColor = colors[random];
+})
+
+//  1 ~ 6 숫자를 랜덤하게 가져오는 게임
+// Math.random() : 0 ~ 0.999999~ (1은 절대로 될수 없다.)
+// Math.random() * 6  : 0 ~ 5.99999~
+// Math.floor(Math.random() * 6) : 0 ~ 5
+// Math.floor(Math.random() * 6) + 1 : 1 ~ 6
+
+
+// 0에서 1미만의 소수가 random하게 나온다.
+
+console.log(Math.random());
+console.log(Math.random() * 6);
+
+// 내림 처리 하기
+console.log(Math.floor(Math.random() * 6));
+console.log(Math.floor(Math.random() * 6) + 1 );
+
+
+
+// 예약어 (종류는 굉장히 많다.)
+// var, typeof , function, null, undefined, false, true 
+
+
+console.log("Main");
+
+var mainVar = "Main Var";
+
+
+function mainFunc() {
+	console.log("Main Func");
+}
 
 
 

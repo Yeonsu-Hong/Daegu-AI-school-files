@@ -589,3 +589,351 @@ console.log(num2);
 
 
 
+
+// 9/8 수요일  제어문, 전역/지역 변수, 스코프, 호이스팅, 반복문 2편
+
+// 반복문 : 일정한 규칙을 가지고 있을때, 
+//  구구단 2단 작성!
+//  고정값 : console.log(2 * );
+// 가변값 - 일정한 규칙을 갖고 있는 가변값 : 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+/*
+
+console.log(2 * 1);
+console.log(2 * 2);
+console.log(2 * 3);
+console.log(2 * 4);
+console.log(2 * 5);
+console.log(2 * 6);
+console.log(2 * 7);
+console.log(2 * 8);
+console.log(2 * 9);
+
+*/
+
+// while 문 (p.498)
+// 구구단 2단 출력문을 while문으로 나타낸 것!
+
+
+/*
+var num = 1; //2
+
+while (num < 10) {
+	// 2 * 1 = 2
+	console.log(2 * num);
+	num++;
+}
+*/
+// 거짓이 되기전까지 계속 돈다. 거짓이 되면 반복문 실행 종료되고 다음줄이 나온다.
+// console.log("반복문 종료")
+
+// 주의점 : 언젠가는 거짓이 되는 시점을 만들어 줘야 한다.
+
+
+// do ~ while
+var i = 12;
+// 최초 한번 실행시킨다. (한번 보장!)
+do {
+	console.log(i);
+	i++;
+} while ( i < 10);
+
+//12가 출력이 된다. 
+// 그 뒤로는 거짓이라 실행이 안된다.
+
+
+
+// 고정값
+// 일정한 규칙을 갖고 있는 가변값!
+
+// for 문 : 가변값의 시작, 조건, 일정한 규칙을 소괄호안에 때려 넣는다. for는 함수가 아니다.
+//i는 전역변수이다.
+/*
+var i;
+for (i = 1; i < 10; i++) {
+	console.log( 2 * i);
+}*/
+
+
+
+
+
+
+
+
+
+// 중첩 반복문
+// 중첩 for 
+
+// 구구단 : 2단 ~ 9단
+
+/*
+
+for(var i =2; i < 10; i++) {
+
+	for(var j = 1; j <10; j++) {
+		console.log(i * j);
+	}
+
+}*/
+
+
+
+
+// break, continue : 반복문에서 사용되는 키워드
+/*
+for (var i =1; i < 10; i++) {
+	if (i === 5) {
+		break;
+	}
+	console.log( 2 * i);
+}*/
+// 5가 되는 순간 종료 된다.
+// break 대신 continue를 하면 건너 뛴다.
+
+
+
+// 반복문의 응용! **** 실무에서 많이 쓰인다.
+
+
+var arr = ['바나나', '사과', '수박', "토마토", "배", "포도"];
+// console.log(arr);
+// console.log(arr.length);
+
+// 고정값 : console.log(arr[]);
+// 가변값 : 0, 1 ,2
+/*
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+*/
+// tip : 배열안에 갯수를 알려주는 property가 존재한다. console.log(arr.length);
+
+for (var i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
+}
+
+
+// for ~ in 
+// i 자체가 좌표이다.
+/*
+for (var i in arr) {
+
+	console.log(i);
+	console.log(array[i]);
+}*/
+
+//  익명함수, 콜백함수 
+/*.addEventLisetner ('click', function(){
+	
+})*/
+
+
+
+
+
+//익명함수, 콜백함수
+
+// array 안에 존재하는 method
+/*
+arr.forEach( function(element, index) {
+
+	console.log(element);
+	console.log(index);
+})*/
+
+
+
+// 매개 변수 순서 중요하다.(element, index)
+// 결과 값은 바나나 0 사과 1 ... 이런식으로 나온다.
+
+// mdn javascropt array 검색 : forEach 찾을수 있다.
+
+
+
+/*
+arr.map(function(element, index) {
+
+	console.log(element);
+	console.log(index);
+
+})*/
+
+// forEach와 map의 차이점????
+/* map은 return을 사용할 수 있다.
+*/
+
+//  함수 파트 리마인드 하기.
+var result = arr.map(function(element, index){
+
+	return element + "" + "10";
+
+});
+
+console.log(result);
+
+
+
+
+// 객체에서 활용할 수 있는 반복문
+
+
+
+var student = {
+	name: "Hong",
+	age: 32,
+	skills: ["자바스크립트", "HTML", "CSS" ],
+
+	sum: function(num1, num2) {
+		console.log(num1 + num2);
+
+	}
+}
+
+// for ~ in 문
+// 객체안에 접근하는 방식 (2가지)
+// student.name
+// student['name'];
+for (var prop in student) {
+
+	console.log(prop);
+	console.log(student[prop]);
+}
+
+
+
+// 배열 : forEach(), map(), length
+
+
+// mdn javascript number, function 등을 검색하면 많이 나온다.
+
+
+
+// 문자열 String
+// length;
+
+var txtLength = "Hello World             ";
+
+// console.log(txtLength.length);
+
+//공백 영역까지 문자의 갯수로 인식한다.
+
+console.log(txtLength.trim().length);
+
+//trim은 공백이 없는 형태로 출력이 된다.
+
+
+
+// trim method의 활용!! : 홈페이지에서 ID, P.w.를 넣었을때 잘못 스페이스 바를 눌러서 인식이 안될때 trim등을 눌러서 오류해결 가능
+var result = prompt("이름을 입력해 주세요");
+
+console.log(result);
+console.log(result.trim().length);
+
+
+// prompt는 공백까지 인식
+
+
+// 문자 추출 method
+
+// 문장에서 항상 마지막에 있는 글자만 가져오고 싶다.
+//  어떻게 할까???
+var str = "Nice to meet you";
+
+console.log(str.length);
+console.log(str.charAt(str.length - 1)); //마지막 글자인데 -1을 왜 해주는 것인가?? 0으로 시작해서 그렇다.
+
+//마지막 글자 가져오기
+
+console.log(str.slice(0, 4));
+
+// console.log(str.slice(2));
+// 2이상 부터 모조리 다 잘라낸다.
+
+// 위에서 0은 글자를 자를 시작점, 4는 어디까지 자를것인가?
+
+
+// split은 일정한 규칙으로 문자를 잘라서 배열안에 담을때,
+// console.log(str.split(' / '));
+//  slash 넣으면 잘려서 나옴
+
+
+
+// console.log(str.replace('Nice', 'Hello'));
+
+//나는 Nice를 바꿀꺼야. 첫번째 인수로 넣기! , 변경할 단어를 두번째 인수로 넣기! Hello
+
+
+// indexof to라는 단어가 몇번째 열에 있는지 확인하는 기능
+// 단어가 존재하지 않을때는 -1이 나온다.
+// 대소문자 구분한다.
+
+// console.log(str.indexOf('to'));
+
+
+// uppercase & lowercase : 모든 문자를 대문자, 소문자로 바꾼다.
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+
+/*
+var search = prompt ("검색어를 입력해 주세요.");
+
+if(search === "apple") {
+	console.log("사과 데이터를 출력한다.");
+} else {
+	console.log("false")
+}
+*/
+// 입력한 문자가 대소문자 상관없이 일괄적으로 바꿔주는 예이다. 검색어랑 결합해서 사용하는 경우가 많다
+
+// mdn javascript string
+
+/*
+var arr =["사과","배","수박"]
+
+// console.log(arr.length);
+
+// 배열안에 새로운 데이터를 추가하고 싶다. push를 사용하면 된다. 뒤로 데이터가 삽입.
+
+arr.push("포도");
+arr.push("토마토");
+
+console.log(arr);
+
+// 앞에서 부터 삽입을 하고 싶다면?? 실습 한번 해보기
+
+arr.unshift("포도","토마토");
+console.log(arr);
+
+
+// 뒤에서 부터 데이터 삭제
+arr.pop();
+
+// 앞에서 부터 데이터 삭제
+arr.shift();
+
+console.log(arr);
+
+*/
+
+// join : 배열안에 있는 데이터를 문자열로 변경
+var arr1 = ["사과", "배", "바나나"];
+var arr2 =["노트북", "마이크", "키보드"];
+var str1 = arr1.join(', ');
+
+console.log(str1);
+
+// 
+var merge = arr1.concat(arr2);
+
+
+
+console.log(merge);
+
+
+
+
+
+
